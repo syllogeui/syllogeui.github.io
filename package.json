@@ -1,0 +1,18 @@
+{
+  "name": "sylloge",
+  "version": "0.1.0",
+  "description": "Katalog UI framework dan set ikon dengan status perawatan dari GitHub dan npm.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": "Garin Ramadhan",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "fetch": "node scripts/fetch.mjs",
+    "icons": "node scripts/icons.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "release:check": "node scripts/build.mjs && node scripts/check.mjs",
+    "release": "node scripts/release.mjs"
+  }
+}
