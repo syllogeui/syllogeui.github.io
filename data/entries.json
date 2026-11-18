@@ -19,7 +19,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Custom products, Tailwind",
+  "note_en": "The code is copied into your project instead of installed as a dependency. The de facto standard right now"
  },
  {
   "id": "ant-design",
@@ -41,7 +43,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Admin and enterprise apps",
+  "note_en": "Very complete, but it has a strong \"Ant\" look and needs theming for other brands"
  },
  {
   "id": "material-ui",
@@ -63,7 +67,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "General use, Material look",
+  "note_en": "The largest ecosystem (DataGrid and more). The repo moved to `mui/`"
  },
  {
   "id": "mantine",
@@ -85,7 +91,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Dashboards, internal apps",
+  "note_en": "Great hooks, with forms, dates, and charts built in"
  },
  {
   "id": "heroui",
@@ -107,7 +115,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "A modern look, fast",
+  "note_en": "Formerly NextUI. Built on Tailwind and React Aria"
  },
  {
   "id": "chakra-ui",
@@ -129,7 +139,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Fast prototyping, good DX",
+  "note_en": "The new version is built on Ark and Zag"
  },
  {
   "id": "daisyui",
@@ -151,7 +163,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "A Tailwind plugin, quick theming",
+  "note_en": "Plain CSS classes, not tied to React"
  },
  {
   "id": "blueprint",
@@ -173,7 +187,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Desktop-like, data-dense apps",
+  "note_en": "Dense layouts that suit analytics tools"
  },
  {
   "id": "react-bootstrap",
@@ -195,7 +211,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Teams already familiar with Bootstrap",
+  "note_en": "Safe and boring (which is a good thing)"
  },
  {
   "id": "fluent-ui",
@@ -217,7 +235,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Products in the Microsoft ecosystem",
+  "note_en": "The license is listed as NOASSERTION, so check it before use"
  },
  {
   "id": "carbon-ibm",
@@ -239,7 +259,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Enterprise, strong UX documentation",
+  "note_en": "Mature design guidelines"
  },
  {
   "id": "base-web-uber",
@@ -261,7 +283,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Enterprise",
+  "note_en": "Rarely updated"
  },
  {
   "id": "rsuite",
@@ -283,7 +307,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Lightweight admin apps",
+  "warn_en": "The official site rsuitejs.com returned HTTP 402 (deployment paused) when checked on Nov 17, 2026, so the demo can't be opened. The package itself is still being released on npm."
  },
  {
   "id": "grommet",
@@ -305,7 +331,8 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "HPE-style apps"
  },
  {
   "id": "elastic-eui",
@@ -327,7 +354,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Data and observability dashboards",
+  "note_en": "The old link in the source repo was wrong (it pointed to Evergreen)"
  },
  {
   "id": "primer-react-github",
@@ -349,7 +378,8 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "GitHub-style interfaces"
  },
  {
   "id": "cloudscape-aws",
@@ -371,7 +401,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Data-heavy consoles and admin tools",
+  "note_en": "A very complete set of design patterns"
  },
  {
   "id": "gestalt-pinterest",
@@ -393,7 +425,8 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "A reference for consumer UI patterns"
  },
  {
   "id": "paste-twilio",
@@ -415,7 +448,8 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "An accessibility-first reference"
  },
  {
   "id": "salesforce-lightning",
@@ -437,7 +471,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Salesforce ecosystem only",
+  "warn_en": "The old docs site (react.lightningdesignsystem.com) now redirects to a GitHub page. When checked on Nov 17, 2026, there was no interactive demo."
  },
  {
   "id": "evergreen-segment",
@@ -459,7 +495,8 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "note_en": "Low activity"
  },
  {
   "id": "radix-primitives",
@@ -481,7 +518,8 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "note_en": "The foundation of shadcn/ui. Updates have slowed down"
  },
  {
   "id": "base-ui-mui",
@@ -503,7 +541,8 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "note_en": "The replacement for MUI Base, very active"
  },
  {
   "id": "react-aria-spectrum-adobe",
@@ -525,7 +564,8 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "note_en": "The best standard for accessibility and i18n"
  },
  {
   "id": "ariakit",
@@ -547,7 +587,8 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "note_en": "No license detected, so check first"
  },
  {
   "id": "headless-ui",
@@ -569,7 +610,8 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "note_en": "Enough for Tailwind projects, but a small component set"
  },
  {
   "id": "ark-ui-zag",
@@ -594,7 +636,8 @@
    "Svelte"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "note_en": "State machines, works across frameworks"
  },
  {
   "id": "park-ui",
@@ -618,7 +661,8 @@
    "Solid"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "note_en": "Styles on top of Ark, in the shadcn manner"
  },
  {
   "id": "kobalte",
@@ -640,7 +684,8 @@
    "Solid"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "note_en": "For SolidJS, not React"
  },
  {
   "id": "tamagui",
@@ -662,7 +707,8 @@
    "React Native"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "note_en": "Universal UI and styling for web and native"
  },
  {
   "id": "gluestack-ui",
@@ -685,7 +731,8 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "note_en": "Native and web, shadcn-style"
  },
  {
   "id": "magic-ui",
@@ -707,7 +754,8 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "note_en": "Animated components, an add-on for shadcn"
  },
  {
   "id": "ant-design-pro",
@@ -729,7 +777,8 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "note_en": "A ready-made admin template"
  },
  {
   "id": "polaris-react-shopify",
@@ -751,7 +800,8 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "note_en": "The repo is archived (`polaris-react-archive`, Sep 2026). Shopify moved to web components"
  },
  {
   "id": "semantic-ui-react",
@@ -773,7 +823,8 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "note_en": "Last push was in Nov 2024, so it's no longer maintained"
  },
  {
   "id": "rebass",
@@ -795,7 +846,8 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "note_en": "Last updated in Jul 2023"
  },
  {
   "id": "react-desktop",
@@ -817,7 +869,8 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "note_en": "Last updated in Jul 2023"
  },
  {
   "id": "cf-ui-cloudflare",
@@ -839,7 +892,8 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "note_en": "Archived since 2019"
  },
  {
   "id": "pluralsight-design-system-classic",
@@ -861,7 +915,8 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "note_en": "Archived (Jun 2024)"
  },
  {
   "id": "hack-club-design-system",
@@ -883,7 +938,8 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "note_en": "Archived (Sep 2023)"
  },
  {
   "id": "toolpad-mui",
@@ -905,7 +961,8 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "note_en": "Archived"
  },
  {
   "id": "primereact",
@@ -927,7 +984,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Business apps with lots of data components",
+  "note_en": "A very complete component set from the Prime ecosystem (PrimeNG, PrimeVue). Official description: 'The Most Complete React UI Component Library'."
  },
  {
   "id": "flowbite-react",
@@ -949,7 +1008,10 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Tailwind projects that want the official Flowbite components",
+  "note_en": "The React version of Flowbite. Its official site blocks automated checks (HTTP 429), so we haven't verified the demo link.",
+  "warn_en": "The official site blocked automated checks (HTTP 429) on Nov 17, 2026. It usually opens in a regular browser, but we haven't verified that."
  },
  {
   "id": "preline-ui",
@@ -971,7 +1033,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Tailwind with ready-made components",
+  "note_en": "The license is listed as NOASSERTION on GitHub, so read the terms before using it commercially."
  },
  {
   "id": "untitled-ui-react",
@@ -993,7 +1057,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "A modern SaaS look, with plenty of page examples",
+  "note_en": "Built on Tailwind and React Aria (per the README), with components copied into your project. The npm package 'untitledui/icons' only contains icons, so it isn't shown."
  },
  {
   "id": "reshaped",
@@ -1015,7 +1081,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Teams that want React and Figma to stay in sync",
+  "note_en": "The official description mentions matching React and Figma components."
  },
  {
   "id": "arco-design",
@@ -1037,7 +1105,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Enterprise, an alternative in the Ant Design style",
+  "note_en": "From ByteDance. The docs are in Chinese and English."
  },
  {
   "id": "semi-design",
@@ -1059,7 +1129,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Enterprise and AI apps",
+  "note_en": "From Douyin. The license is listed as NOASSERTION, so check it manually."
  },
  {
   "id": "tdesign-react",
@@ -1081,7 +1153,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Enterprise, Tencent ecosystem",
+  "note_en": "Comes in mobile, desktop, and several other framework versions."
  },
  {
   "id": "patternfly-react",
@@ -1103,7 +1177,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Enterprise and cloud consoles",
+  "note_en": "Red Hat's design system. Few stars, but regular releases."
  },
  {
   "id": "gravity-ui",
@@ -1125,7 +1201,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Data apps and internal dashboards",
+  "note_en": "From Yandex. The repo has no official description."
  },
  {
   "id": "zendesk-garden",
@@ -1147,7 +1225,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Products that follow Zendesk's patterns",
+  "note_en": "Split into many small packages, so npm download numbers aren't shown."
  },
  {
   "id": "workday-canvas-kit",
@@ -1169,7 +1249,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Enterprise apps in the Workday style",
+  "note_en": "Few stars, and aimed at the Workday ecosystem."
  },
  {
   "id": "coss-com-ui-origin-ui",
@@ -1191,7 +1273,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "shadcn-style components for SaaS products",
+  "note_en": "Formerly Origin UI, now the official design system of Cal.com."
  },
  {
   "id": "tremor",
@@ -1213,7 +1297,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Dashboards and charts",
+  "note_en": "Copy and paste on top of Tailwind and Radix. Last push was in Oct 2025, so it's inactive."
  },
  {
   "id": "ant-design-mobile",
@@ -1235,7 +1321,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Mobile web apps",
+  "note_en": "The mobile version of Ant Design, installed separately."
  },
  {
   "id": "ionic-framework",
@@ -1259,7 +1347,9 @@
    "Angular"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Hybrid mobile apps (iOS, Android, web)",
+  "note_en": "Built on web components with React bindings. The most established option in this category."
  },
  {
   "id": "web-awesome",
@@ -1281,7 +1371,9 @@
    "Web Components"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Framework-agnostic components that also work in React",
+  "note_en": "The successor to Shoelace. Built on web components, not pure React components."
  },
  {
   "id": "lobe-ui",
@@ -1303,7 +1395,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Chat interfaces and AI apps",
+  "note_en": "From the LobeHub project. npm downloads are high for its size."
  },
  {
   "id": "ui-sdk-vercel-labs",
@@ -1325,7 +1419,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Unstyled UI behavior (focus, keyboard, popups, drag and drop)",
+  "note_en": "The repo was created on Oct 26, 2026. Adapters for React, Vue, Svelte, Solid, and Web Components. Still very new."
  },
  {
   "id": "arc-library",
@@ -1347,7 +1443,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Components with smooth animation",
+  "note_en": "Copied into your project through shadcn. CSS modules styling. Still very new."
  },
  {
   "id": "boardui",
@@ -1369,7 +1467,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Agentic interfaces (agent workflows)",
+  "note_en": "A React design system for agent interfaces. npm downloads are still small."
  },
  {
   "id": "affectui",
@@ -1391,7 +1491,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Showing what AI agents do (tool calls, traces, agent trees)",
+  "note_en": "Components made for agent UIs. Still very new."
  },
  {
   "id": "looseleaf",
@@ -1413,7 +1515,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "A hand-drawn look for creative projects",
+  "note_en": "shadcn-style components with a sketch-on-paper style. Great for a distinctive visual character, less so for serious apps. Still very new."
  },
  {
   "id": "appica-ui",
@@ -1435,7 +1539,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "SaaS dashboards and AI apps",
+  "note_en": "More than 70 themed components. Still very new."
  },
  {
   "id": "audiocn-ui",
@@ -1457,7 +1563,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Audio apps (mixers, level meters, knobs)",
+  "note_en": "Niche. The license is listed as NOASSERTION, so check it manually."
  },
  {
   "id": "hextaui",
@@ -1479,7 +1587,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Ready-made blocks on top of shadcn/ui",
+  "note_en": "Built on Base UI. Few stars."
  },
  {
   "id": "detent-ui",
@@ -1501,7 +1611,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Components with state and motion already handled",
+  "note_en": "Installed through the shadcn CLI. Still few stars."
  },
  {
   "id": "shadcn-m3e",
@@ -1523,7 +1635,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "A Material 3 Expressive look on top of shadcn",
+  "note_en": "A small experiment that brings two design systems together."
  },
  {
   "id": "plasma-ui",
@@ -1545,7 +1659,9 @@
    "React"
   ],
   "fmt": [],
-  "istyle": []
+  "istyle": [],
+  "fit_en": "Experimental liquid glass effects (WebGL)",
+  "note_en": "The README says it's still a work in progress. Good for demos, not for production."
  },
  {
   "id": "lucide",
@@ -1574,7 +1690,9 @@
   "istyle": [
    "Outline"
   ],
-  "ico": true
+  "ico": true,
+  "fit_en": "Clean lines, the default in shadcn/ui",
+  "note_en": "A well-maintained fork of Feather. A safe choice for new products"
  },
  {
   "id": "phosphor",
@@ -1604,7 +1722,9 @@
    "Solid",
    "Duotone"
   ],
-  "ico": true
+  "ico": true,
+  "fit_en": "You need one set with several weights",
+  "note_en": "Weights from thin to bold plus duotone, all in one family"
  },
  {
   "id": "tabler-icons",
@@ -1633,7 +1753,9 @@
    "Outline",
    "Solid"
   ],
-  "ico": true
+  "ico": true,
+  "fit_en": "A large set for dashboards",
+  "note_en": "Thousands of icons with consistent strokes, updated daily"
  },
  {
   "id": "heroicons",
@@ -1661,7 +1783,9 @@
    "Outline",
    "Solid"
   ],
-  "ico": true
+  "ico": true,
+  "fit_en": "Tailwind projects",
+  "note_en": "Made by the Tailwind team. A small set, but a tidy one"
  },
  {
   "id": "radix-icons",
@@ -1687,7 +1811,9 @@
   "istyle": [
    "Outline"
   ],
-  "ico": true
+  "ico": true,
+  "fit_en": "Pairs with Radix and shadcn",
+  "note_en": "Only 15x15px, which works well for dense interfaces"
  },
  {
   "id": "iconoir",
@@ -1714,7 +1840,9 @@
   "istyle": [
    "Outline"
   ],
-  "ico": true
+  "ico": true,
+  "fit_en": "A delicate line style",
+  "note_en": "Free, with no paid version"
  },
  {
   "id": "feather",
@@ -1740,7 +1868,10 @@
   "istyle": [
    "Outline"
   ],
-  "ico": true
+  "ico": true,
+  "fit_en": "Older projects that already use it",
+  "note_en": "Maintenance has slowed down. For new projects, use Lucide",
+  "warn_en": "Maintenance has slowed down (last update March 2025). For new projects, Lucide is the successor."
  },
  {
   "id": "boxicons",
@@ -1767,7 +1898,10 @@
    "Outline",
    "Solid"
   ],
-  "ico": true
+  "ico": true,
+  "fit_en": "You need logos and general icons in one set",
+  "note_en": "Version 2.x is inactive, and the new version is partly paid",
+  "warn_en": "The 2.x npm package is no longer updated, and the latest version is partly paid."
  },
  {
   "id": "font-awesome-free",
@@ -1794,7 +1928,10 @@
   "istyle": [
    "Solid"
   ],
-  "ico": true
+  "ico": true,
+  "fit_en": "Long-established ecosystem with plenty of tutorials",
+  "note_en": "The free version is limited. Attribution is required (CC BY 4.0 for the icons)",
+  "warn_en": "Attribution is required for the free icons (CC BY 4.0). The free version is much smaller than the paid one."
  },
  {
   "id": "bootstrap-icons",
@@ -1821,7 +1958,9 @@
    "Outline",
    "Solid"
   ],
-  "ico": true
+  "ico": true,
+  "fit_en": "Bootstrap projects and plain HTML",
+  "note_en": "Works without any framework"
  },
  {
   "id": "remix-icon",
@@ -1849,7 +1988,9 @@
    "Outline",
    "Solid"
   ],
-  "ico": true
+  "ico": true,
+  "fit_en": "A neutral set of 3,000+ icons",
+  "note_en": "Remix Icon license (Apache-2.0 on npm)"
  },
  {
   "id": "ionicons",
@@ -1876,7 +2017,9 @@
    "Outline",
    "Solid"
   ],
-  "ico": true
+  "ico": true,
+  "fit_en": "Ionic and mobile apps",
+  "note_en": "Three styles per icon"
  },
  {
   "id": "material-symbols",
@@ -1903,7 +2046,9 @@
    "Outline",
    "Solid"
   ],
-  "ico": true
+  "ico": true,
+  "fit_en": "Material Design and Android",
+  "note_en": "Variable: weight, fill, grade, optical size"
  },
  {
   "id": "fluent-icons",
@@ -1931,7 +2076,9 @@
    "Outline",
    "Solid"
   ],
-  "ico": true
+  "ico": true,
+  "fit_en": "Microsoft-style products",
+  "note_en": "Two styles, many sizes"
  },
  {
   "id": "carbon-icons",
@@ -1957,7 +2104,9 @@
   "istyle": [
    "Outline"
   ],
-  "ico": true
+  "ico": true,
+  "fit_en": "Enterprise and data products",
+  "note_en": "IBM Carbon icons, with a bold style"
  },
  {
   "id": "octicons",
@@ -1983,7 +2132,9 @@
   "istyle": [
    "Outline"
   ],
-  "ico": true
+  "ico": true,
+  "fit_en": "Developer tools",
+  "note_en": "The icons used in GitHub's interface"
  },
  {
   "id": "simple-icons",
@@ -2009,7 +2160,10 @@
   "istyle": [
    "Logo"
   ],
-  "ico": true
+  "ico": true,
+  "fit_en": "Technology and brand logos",
+  "note_en": "Logos only, CC0. Follow each brand's guidelines when using a logo",
+  "warn_en": "Brand logos only. Use them according to each brand's own guidelines."
  },
  {
   "id": "iconify",
@@ -2038,6 +2192,8 @@
    "Outline",
    "Solid"
   ],
-  "ico": true
+  "ico": true,
+  "fit_en": "You need many sets through one API",
+  "note_en": "One API for hundreds of sets. The preview uses the MDI set as an example"
  }
 ]

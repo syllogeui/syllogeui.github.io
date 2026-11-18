@@ -27,6 +27,10 @@ for (const p of files) {
   for (const [re, label] of FORBID) { const m = s.match(re); if (m) bad(`${label} di ${rel(p)}: "${m[0]}"`); }
 }
 
+// terjemahan: tiap teks kurator harus punya padanan English
+for (const e of JSON.parse(readFileSync(join(root, "data/entries.json"), "utf8")))
+  for (const f of ["fit", "note", "warn"]) if (e[f] && !e[f + "_en"]) bad(`terjemahan ${f}_en belum ada untuk ${e.id}`);
+
 // 2. tautan dan sumber internal ada, halaman statis tanpa title bawaan
 const exists = (u) => { const path = join(out, u.split("#")[0].split("?")[0]); return existsSync(path) && (!statSync(path).isDirectory() || existsSync(join(path, "index.html"))); };
 const titles = new Map(), descs = new Map();

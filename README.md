@@ -36,7 +36,7 @@ Snapshot lama tidak diubah. Build memakai yang terbaru.
 
 ## Menambah entri
 
-Tambahkan objek ke `data/entries.json` dengan `id`, `name`, `kind` (`fw`, `icon`, atau `arsip`), `sub`, `repo`, dan tautannya. Lalu:
+Tambahkan objek ke `data/entries.json` dengan `id`, `name`, `kind` (`fw`, `icon`, atau `arsip`), `sub`, `repo`, dan tautannya. Teks `fit`, `note`, dan `warn` ditulis dalam bahasa Indonesia, dan tiap teks wajib punya padanan English di `fit_en`, `note_en`, `warn_en`. Lalu:
 
 ```bash
 node scripts/fetch.mjs --only <id>

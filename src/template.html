@@ -465,7 +465,7 @@ html[data-rail] .botl{flex-direction:column;gap:4px}html[data-rail] .botl button
 <script src="assets/icons.js"></script>
 <script>
 (()=>{let p=null;try{p=localStorage.getItem("rail")}catch(e){}if(p==="1"||(p===null&&innerWidth<1200&&innerWidth>=900))document.documentElement.dataset.rail="1"})();
-const D=__DATA__;const META=__META__;function applyMeta(){const m=META[LANG]||META.id,s=(q,v)=>{const e=document.querySelector(q);if(e)e.setAttribute("content",v)};document.title=m.t;s("meta[name=description]",m.d);s("meta[property=\"og:title\"]",m.t);s("meta[property=\"og:description\"]",m.d)}
+const D=__DATA__;const tx=(i,f)=>(LANG==="en"&&i[f+"_en"])||i[f];const META=__META__;function applyMeta(){const m=META[LANG]||META.id,s=(q,v)=>{const e=document.querySelector(q);if(e)e.setAttribute("content",v)};document.title=m.t;s("meta[name=description]",m.d);s("meta[property=\"og:title\"]",m.t);s("meta[property=\"og:description\"]",m.d)}
 const KINDS=[["fw","UI framework",["Komponen siap pakai","Design system perusahaan","Tailwind dan copy-paste","Headless dan primitif","Dashboard dan data","UI untuk AI dan agent","Mobile dan hybrid","Web components","Eksperimental dan niche"]],["icon","Ikon",["Set serbaguna","Set lengkap","Milik sistem desain","Logo merek","Agregator"]],["arsip","Arsip",["Arsip"]]];
 const SUBS=KINDS.flatMap(k=>k[2]);
 const lt=l=>/^MIT/.test(l||"")?"MIT":/^Apache/.test(l||"")?"Apache-2.0":/^ISC/.test(l||"")?"ISC":/^CC0/.test(l||"")?"CC0":l?"Lainnya":"";
@@ -492,7 +492,7 @@ const pill=i=>{const[k,t]=status(i);return`<span class="pill"><i class="dot ${k}
 const img=i=>`<img src="assets/thumbs/${i.id}.jpg" width="640" height="400" alt="Tampilan situs ${esc(i.name)}" loading="lazy" onload="this.classList.add('in')" onerror="this.remove()">`;
 const link=(h,t,p)=>h?`<a class="btn ${p?"pri":""}" href="${esc(h)}" target="_blank" rel="noopener">${t} ${ic("ext")}</a>`:"";
 const baru=i=>i.baru?`<span class="tag">Baru</span>`:"";
-function match(i,nt){const t=(i.name+" "+i.note+" "+(i.fit||"")+" "+(i.desc||"")+" "+(i.topics||[]).join(" ")+" "+i.sub).toLowerCase();return t.includes(st.q)&&(nt||[...st.tags].every(k=>tg(i).includes(k)))&&(![...st.stat].some(x=>x!=="baru")||st.stat.has(status(i)[0]))&&(!st.stat.has("baru")||i.baru)}
+function match(i,nt){const t=(i.name+" "+i.note+" "+(i.note_en||"")+" "+(i.fit||"")+" "+(i.fit_en||"")+" "+(i.desc||"")+" "+(i.topics||[]).join(" ")+" "+i.sub).toLowerCase();return t.includes(st.q)&&(nt||[...st.tags].every(k=>tg(i).includes(k)))&&(![...st.stat].some(x=>x!=="baru")||st.stat.has(status(i)[0]))&&(!st.stat.has("baru")||i.baru)}
 function sorted(l){const f={cat:(a,b)=>SUBS.indexOf(a.sub)-SUBS.indexOf(b.sub)||b.n-a.n,stars:(a,b)=>b.n-a.n,dl:(a,b)=>(b.dl||0)-(a.dl||0),push:(a,b)=>b.push.localeCompare(a.push),name:(a,b)=>a.name.localeCompare(b.name)}[st.sort];return l.slice().sort(f)}
 const visible=()=>sorted(D.filter(i=>match(i)&&inScope(i)));
 const ICN=window.ICONS||{};
@@ -500,9 +500,9 @@ function svgStr(id,n,size,full){const s=ICN[id],d=s.d&&s.d[n],w=d?d[0]:s.w,h=d?d
 const ig=(i,k)=>ICN[i.id]?`<div class="ig">${Object.keys(ICN[i.id].i).slice(0,k).map(n=>svgStr(i.id,n,k>1?24:30)).join("")}</div>`:"";
 const card=(i,n=0)=>`<article style="--i:${n}" class="card ${i.kind==="arsip"?"dead":""} ${st.sel.includes(i.id)?"sel":""} ${cur===i.id?"on":""}" data-id="${i.id}"><div class="th">${cp(i)}${pill(i)}</div>
 <label class="cmp"><input type="checkbox" data-c="${i.id}" ${st.sel.includes(i.id)?"checked":""} aria-label="Bandingkan ${esc(i.name)}"><span>Bandingkan</span></label>
-<div class="bd"><a class="nm" data-o="${i.id}" href="${i.path}">${esc(i.name)}${baru(i)}</a><p class="nt">${esc(i.fit||i.note)}</p>
+<div class="bd"><a class="nm" data-o="${i.id}" href="${i.path}">${esc(i.name)}${baru(i)}</a><p class="nt">${esc(tx(i,"fit")||tx(i,"note"))}</p>
 <div class="meta num"><span>${ic("star",14)} <b>${esc(i.stars)}</b></span><span>${rel(i)}</span>${i.dl?`<span><b>${dlf(i)}</b>/mgg</span>`:""}</div></div></article>`;
-const row=i=>`<tr data-o="${i.id}" data-id="${i.id}" class="${cur===i.id?"on":""}" tabindex="0"><td><div class="tn">${i.ico?ig(i,1):img(i)}<a class="tl" href="${i.path}">${esc(i.name)}</a> ${baru(i)}</div></td><td>${esc(i.sub)}</td><td><span class="dot ${status(i)[0]}" style="display:inline-block;margin-right:6px"></span>${status(i)[1]}</td><td class="num">${esc(i.stars)}</td><td class="num">${rel(i)}</td><td class="num">${dlf(i)||"-"}</td><td>${esc(i.lic||"-")}</td><td>${esc(i.fit||i.note)}</td></tr>`;
+const row=i=>`<tr data-o="${i.id}" data-id="${i.id}" class="${cur===i.id?"on":""}" tabindex="0"><td><div class="tn">${i.ico?ig(i,1):img(i)}<a class="tl" href="${i.path}">${esc(i.name)}</a> ${baru(i)}</div></td><td>${esc(i.sub)}</td><td><span class="dot ${status(i)[0]}" style="display:inline-block;margin-right:6px"></span>${status(i)[1]}</td><td class="num">${esc(i.stars)}</td><td class="num">${rel(i)}</td><td class="num">${dlf(i)||"-"}</td><td>${esc(i.lic||"-")}</td><td>${esc(tx(i,"fit")||tx(i,"note"))}</td></tr>`;
 /* infinite scroll */
 const BATCH=()=>st.view==="table"?40:24;
 function more(){const from=st.shown,to=Math.min(st.list.length,from+BATCH());if(from>=to)return;
@@ -596,11 +596,11 @@ function iconInit(i){IL.id=i.id;IL.q="";IL.sw=null;IL.manual=false;IL.p=null;IL.
 loadPack(i.id).then(p=>{if(cur!==i.id)return;IL.p=p;const sts=p.s.map((m,k)=>[m[0],k]).sort((a,b)=>ORD.indexOf(a[0])-ORD.indexOf(b[0]));IL.sts=sts;IL.si=sts.map(x=>[x[1],Object.values(p.i).reduce((n,a)=>n+(a[x[1]]?1:0),0)]).sort((a,b)=>b[1]-a[1])[0][0];if(sts.length>1&&sts[0][0]!=="Regular"&&sts[0][0]!=="Outline")IL.si=sts[0][1];
 $("#lst").innerHTML=sts.length>1?sts.map(([l,k])=>`<button data-ist="${k}" aria-pressed="${k===IL.si}">${l}</button>`).join(""):"";$("#lst").hidden=sts.length<2;if(sts.length>1)ind($("#lst"),"[aria-pressed=true]",true);
 viewBuild();IL.sel=IL.want&&IL.view.includes(IL.want)?IL.want:IL.view.includes("house")?"house":IL.view.includes("home")?"home":IL.view[0];$("#lsz").value=IL.size;$("#lal").value=IL.alpha;if(IL.col&&!SW.some(x=>x[0]===IL.col))$("#lcol").value=IL.col;g.scrollTop=0;gridDraw();codeDraw(1);ind($(".rtabs"),"[aria-pressed=true]",true);setTimeout(()=>{ind($(".rtabs"),"[aria-pressed=true]",true);if(!$("#lst").hidden)ind($("#lst"),"[aria-pressed=true]",true)},250);$(".ilab").classList.add("ready")}).catch(()=>{g.firstElementChild.innerHTML=`<p class="lnote" style="padding:14px">Berkas ikon untuk set ini tidak ditemukan (assets/icons/${i.id}.js).</p>`})}
-function iconDetail(i,ix,l,k,t,facts,tags,cmd,EX){const info=`${i.fit?`<div class="sec"><h4>Cocok untuk</h4><p>${esc(i.fit)}</p></div>`:""}${i.note?`<div class="sec"><h4>Catatan kurator</h4><p>${esc(i.note)}</p></div>`:""}${i.desc?`<div class="sec"><h4>Deskripsi resmi (GitHub)</h4><p>${esc(i.desc)}</p></div>`:""}<dl class="num">${facts.map(f=>`<div><dt>${f[0]}</dt><dd>${esc(f[1])}</dd></div>`).join("")}</dl>${EX}`;
+function iconDetail(i,ix,l,k,t,facts,tags,cmd,EX){const info=`${i.fit?`<div class="sec"><h4>Cocok untuk</h4><p>${esc(tx(i,"fit"))}</p></div>`:""}${i.note?`<div class="sec"><h4>Catatan kurator</h4><p>${esc(tx(i,"note"))}</p></div>`:""}${i.desc?`<div class="sec"><h4>Deskripsi resmi (GitHub)</h4><p>${esc(i.desc)}</p></div>`:""}<dl class="num">${facts.map(f=>`<div><dt>${f[0]}</dt><dd>${esc(f[1])}</dd></div>`).join("")}</dl>${EX}`;
 return`<div class="dh"><div class="nv"><button class="ib" data-nav="-1" aria-label="Sebelumnya" ${ix<1?"disabled":""}>${ic("l",20)}</button><button class="ib" data-nav="1" aria-label="Berikutnya" ${ix<0||ix>=l.length-1?"disabled":""}>${ic("r",20)}</button><span class="num">${ix+1} / ${l.length}</span></div>
 <div class="dht"><h3>${esc(i.name)}</h3><span class="chip" style="min-height:0;padding:1px 10px"><i class="dot ${k}"></i>${t}</span><span class="num">${nf(i.count||0)}+ ikon</span><span>${esc(i.lic||"")}</span></div>
 <div class="acts" style="gap:6px">${link(i.demo,"Galeri",false)}${link(i.gh,"GitHub")}</div><button class="ib" data-close aria-label="Tutup">${ic("x",20)}</button></div>
-${i.warn?`<div class="warn" style="margin-bottom:10px">${esc(i.warn)}</div>`:""}
+${i.warn?`<div class="warn" style="margin-bottom:10px">${esc(tx(i,"warn"))}</div>`:""}
 <div class="ilab dc${dir<0?" back":""}"><div class="ilL"><div class="ilq"><div class="search"><input id="lq" type="search" placeholder="Cari ikon di set ini" aria-label="Cari ikon"></div><div class="seg" id="lst" role="group" aria-label="Gaya ikon" hidden></div></div><span id="lcnt" class="num ilc">Memuat ikon…</span><div class="lg" id="lg" tabindex="0" role="listbox" aria-label="Daftar ikon"><div class="lsp"><p class="lnote" style="padding:14px">Memuat ikon…</p></div></div></div>
 <div class="ilR"><div class="seg rtabs" role="tablist" aria-label="Panel"><button data-rt="pv" aria-pressed="true">Pratinjau</button><button data-rt="info" aria-pressed="false">Info</button></div>
 <div class="rp" id="rp-pv"><div class="pvrow"><div class="lpv" data-bg="kotak"><div class="lbig" id="lbig"></div><div class="lmeta"><strong id="lnm" class="mono"></strong><span id="lsz-t" class="num"></span></div></div><div class="cmps" id="lcmp" hidden></div></div>
@@ -621,9 +621,9 @@ return`<div class="dh"><div class="nv"><button class="ib" data-nav="-1" aria-lab
 <div class="dc mg${dir<0?" back":""}"><div class="mgl">${i.ico?lab(i):`<a class="hero" ${i.demo||i.home?`href="${esc(i.demo||i.home)}" target="_blank" rel="noopener"`:""} aria-label="Buka ${esc(i.name)}">${img(i)}</a><div class="mgx">${EX}</div>`}</div>
 <div class="mgr"><div><h3>${esc(i.name)}</h3><div class="sub"><span class="chip" style="min-height:0;padding:1px 10px"><i class="dot ${k}"></i>${t}</span><span>${esc(i.sub)}</span>${baru(i)}</div></div>
 <div class="acts">${link(i.demo,i.ico?"Galeri lengkap":"Lihat demo",true)}${link(i.home,i.demo?"Dokumentasi":"Situs",!i.demo)}${link(i.gh,"GitHub")}${i.gh2?link(i.gh2,"Zag"):""}${i.pkg?link("https://www.npmjs.com/package/"+i.pkg,"npm"):""}</div>
-${i.warn?`<div class="warn">${esc(i.warn)}</div>`:""}
-${i.fit?`<div class="sec"><h4>Cocok untuk</h4><p>${esc(i.fit)}</p></div>`:""}
-${i.note?`<div class="sec"><h4>Catatan kurator</h4><p>${esc(i.note)}</p></div>`:""}
+${i.warn?`<div class="warn">${esc(tx(i,"warn"))}</div>`:""}
+${i.fit?`<div class="sec"><h4>Cocok untuk</h4><p>${esc(tx(i,"fit"))}</p></div>`:""}
+${i.note?`<div class="sec"><h4>Catatan kurator</h4><p>${esc(tx(i,"note"))}</p></div>`:""}
 ${i.desc?`<div class="sec"><h4>Deskripsi resmi (GitHub)</h4><p>${esc(i.desc)}</p></div>`:""}
 <dl class="num">${facts.map(f=>`<div><dt>${f[0]}</dt><dd>${esc(f[1])}</dd></div>`).join("")}</dl>
 ${i.ico?EX:""}</div></div>`}
@@ -647,7 +647,7 @@ const cm=$("#cm"),cms=$("#cms");
 function compare(){const L=st.sel.map(id=>D.find(x=>x.id===id));const R=(t,f)=>`<tr><td>${t}</td>${L.map(i=>`<td>${f(i)||"-"}</td>`).join("")}</tr>`;
 cms.innerHTML=`<div class="dh"><strong>Bandingkan ${L.length} entri</strong><button class="ib" id="cx" aria-label="Tutup">${ic("x",20)}</button></div><div class="tw"><table><tbody>
 <tr><td></td>${L.map(i=>`<td><div style="margin-bottom:8px">${cp(i)}</div><strong>${esc(i.name)}</strong></td>`).join("")}</tr>
-${R("Status",i=>status(i)[1])}${R("Stars",i=>esc(i.stars))}${R("Update terakhir",i=>i.push?dateid(i.push):"")}${R("Unduhan npm/mgg",dlf)}${R("Versi npm",i=>esc(i.v))}${R("Lisensi",i=>esc(i.lic))}${R("Repo dibuat",i=>i.created)}${R("Cocok untuk",i=>esc(i.fit||""))}${R("Catatan kurator",i=>esc(i.note))}${R("Link",i=>[i.demo&&`<a href="${esc(i.demo)}" target="_blank" rel="noopener">Demo</a>`,i.home&&`<a href="${esc(i.home)}" target="_blank" rel="noopener">Situs</a>`,i.gh&&`<a href="${esc(i.gh)}" target="_blank" rel="noopener">GitHub</a>`].filter(Boolean).join(" · "))}
+${R("Status",i=>status(i)[1])}${R("Stars",i=>esc(i.stars))}${R("Update terakhir",i=>i.push?dateid(i.push):"")}${R("Unduhan npm/mgg",dlf)}${R("Versi npm",i=>esc(i.v))}${R("Lisensi",i=>esc(i.lic))}${R("Repo dibuat",i=>i.created)}${R("Cocok untuk",i=>esc(tx(i,"fit")||""))}${R("Catatan kurator",i=>esc(tx(i,"note")))}${R("Link",i=>[i.demo&&`<a href="${esc(i.demo)}" target="_blank" rel="noopener">Demo</a>`,i.home&&`<a href="${esc(i.home)}" target="_blank" rel="noopener">Situs</a>`,i.gh&&`<a href="${esc(i.gh)}" target="_blank" rel="noopener">GitHub</a>`].filter(Boolean).join(" · "))}
 </tbody></table></div>`;cm.showModal();document.documentElement.classList.add("mo");materialize(cm)}
 cm.addEventListener("close",()=>{if(!dr.open)document.documentElement.classList.remove("mo")});
 cm.addEventListener("click",e=>{if(e.target===cm||e.target.closest("#cx"))closeDlg(cm)});
@@ -776,7 +776,7 @@ if(k==="docs")return`<div class="dh"><strong>${L("Dokumentasi","Documentation")}
 <p>${L("Satu entri punya satu subkategori, dan beberapa tag: gaya styling, framework, gaya ikon, format, lisensi. Gunakan tombol Filter untuk menumpuk tag.","Each entry has one subcategory and several tags: styling approach, framework, icon style, format, license. Use the Filter button to stack tags.")}</p>
 <h4>${L("Kurator","Curator")}</h4><p>${L("Dikurasi oleh","Curated by")} <a href="https://github.com/garinramadhan" target="_blank" rel="noopener">Garin Ramadhan</a>.</p>
 <h4>${L("Penilaian kurator","Curator's opinion")}</h4>
-<p>${L('"Cocok untuk" dan "Catatan kurator" adalah penilaian kurator, bukan data resmi. Catatan ditulis dalam bahasa Indonesia dan belum diterjemahkan.','"Best for" and "Curator notes" are the curator\'s opinion, not official data. Notes are written in Indonesian and are not translated yet.')}</p>
+<p>${L('"Cocok untuk" dan "Catatan kurator" adalah penilaian kurator, bukan data resmi. Halaman statis tiap entri hanya tersedia dalam bahasa Indonesia.','"Best for" and "Curator notes" are the curator\'s opinion, not official data. The static page for each entry is only available in Indonesian.')}</p>
 <h4>${L("Lab ikon","Icon lab")}</h4>
 <p>${L("Buka set ikon untuk mencari semua ikonnya, mengatur ukuran, garis, alpha, warna, dan gaya, lalu menyalin kode SVG, React, Vue, Svelte, HTML, atau CSS. Tab CSS bisa disunting.","Open an icon set to search all its icons, adjust size, stroke, alpha, color and style, then copy SVG, React, Vue, Svelte, HTML or CSS code. The CSS tab is editable.")}</p>
 <h4>${L("Pintasan keyboard","Keyboard shortcuts")}</h4>
