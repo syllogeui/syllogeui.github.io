@@ -12,7 +12,7 @@ const bad = (m) => problems.push(m);
 
 const walk = (d) => readdirSync(d).flatMap((f) => { const p = join(d, f); return statSync(p).isDirectory() ? walk(p) : [p]; });
 const files = walk(out), rel = (p) => p.slice(out.length);
-const TEXT = new Set([".html", ".xml", ".txt", ".json", ".csv", ".css", ".svg", ".webmanifest"]);
+const TEXT = new Set([".html", ".xml", ".txt", ".json", ".csv", ".css", ".svg", ".webmanifest", ".md"]);
 const isIconData = (p) => rel(p).startsWith("/assets/icons/") || rel(p) === "/assets/icons.js";
 const pages = files.filter((p) => p.endsWith(".html"));
 
@@ -54,6 +54,24 @@ const site = readFileSync(join(out, "sitemap.xml"), "utf8");
 const locs = [...site.matchAll(/<loc>https?:\/\/[^/]+(\/[^<]*)<\/loc>/g)].map((m) => m[1]);
 for (const u of locs) if (!exists(u)) bad(`sitemap menunjuk ke berkas yang tidak ada: ${u}`);
 for (const p of pages) { const r = rel(p); if (r === "/404.html") continue; const u = r.replace(/index\.html$/, ""); if (!locs.includes(u)) bad(`halaman tidak ada di sitemap: ${u}`); }
+
+// 3a. berkas untuk agen AI: ada, memuat setiap entri, teks Inggris lengkap, tanpa penanda {kosong}
+for (const f of ["for-ai.md", "llms.txt", "llms-full.txt", "data/schema.json"]) if (!existsSync(join(out, f))) bad(`berkas agen tidak ada: ${f}`);
+if (existsSync(join(out, "llms-full.txt"))) {
+  const full = readFileSync(join(out, "llms-full.txt"), "utf8"), list = JSON.parse(readFileSync(join(out, "data/entries.json"), "utf8")).entries;
+  for (const e of list) if (!full.includes(e.path)) bad(`llms-full.txt tidak memuat ${e.path}`);
+}
+if (existsSync(join(out, "for-ai.md")) && /\{[a-zA-Z]+\}/.test(readFileSync(join(out, "for-ai.md"), "utf8"))) bad("for-ai.md masih berisi penanda {…} yang belum terisi");
+
+// 3a2. halaman utama harus bisa dibaca tanpa JavaScript: <noscript> memuat tautan agen dan setiap entri
+{
+  const idx = readFileSync(join(out, "index.html"), "utf8"), ns = (idx.match(/<noscript>([\s\S]*?)<\/noscript>/) || [])[1] || "";
+  if (!ns) bad("index.html tanpa <noscript>");
+  else {
+    for (const u of ["/for-ai.md", "/llms-full.txt"]) if (!ns.includes(`href="${u}"`)) bad(`<noscript> tanpa tautan ${u}`);
+    for (const e of JSON.parse(readFileSync(join(out, "data/entries.json"), "utf8")).entries) if (!ns.includes(`href="${e.path}"`)) bad(`<noscript> tanpa tautan ${e.path}`);
+  }
+}
 
 // 3b. manifest: ikon yang dirujuk ada
 for (const p of files.filter((f) => f.endsWith(".webmanifest"))) for (const ic of JSON.parse(readFileSync(p, "utf8")).icons || []) if (!exists(ic.src)) bad(`manifest menunjuk ke ikon yang tidak ada: ${ic.src}`);
