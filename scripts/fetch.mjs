@@ -2,7 +2,7 @@
 // Memakai `gh` untuk GitHub, jadi token tidak pernah disentuh skrip ini.
 // Pakai: node scripts/fetch.mjs [--only id1,id2] [--out berkas.json]
 import { execFileSync } from "node:child_process";
-import { readFileSync, writeFileSync, readdirSync } from "node:fs";
+import { readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
 
 const root = new URL("..", import.meta.url).pathname;
@@ -17,12 +17,31 @@ const prevFile = readdirSync(snapDir).filter((f) => f.endsWith(".json") && join(
 const prev = prevFile ? JSON.parse(readFileSync(join(snapDir, prevFile), "utf8")).entries : {};
 
 const gh = (path) => JSON.parse(execFileSync("gh", ["api", path], { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] }));
-const get = async (url) => { const r = await fetch(url, { headers: { "user-agent": "sylloge" } }); if (!r.ok) throw new Error(`${r.status} ${url}`); return r.json(); };
+// coba ulang saat kena batas laju (429) dengan jeda bertambah, baru menyerah
+const get = async (url) => {
+  for (let a = 0; ; a++) {
+    const r = await fetch(url, { headers: { "user-agent": "sylloge" } });
+    if (r.status === 429 && a < 4) { await new Promise((ok) => setTimeout(ok, 3000 * (a + 1))); continue; }
+    if (!r.ok) throw new Error(`${r.status} ${url}`);
+    return r.json();
+  }
+};
 const clean = (s) => s?.replace(/[\p{Extended_Pictographic}\p{Emoji_Presentation}\u200d\ufe0f\u2003]/gu, "").replace(/:[a-z0-9_+-]+:/g, "").replace(/\s+/g, " ").trim() || null;
 const spdx = (l) => (l === "BSD-3-Clause" ? "BSD-3" : l);
-const k = (n) => (n >= 1e6 ? (n / 1e6).toFixed(1).replace(/\.0$/, "") + "M" : n >= 950 ? Math.round(n / 1e3) + "k" : String(n));
+// bintang: <1.000 angka asli, 1.000-9.999 satu desimal (koma, ".0" dibuang), >=10.000 dibulatkan
+const dec = (x) => x.toFixed(1).replace(/\.0$/, "").replace(".", ",");
+const k = (n) => (n >= 1e6 ? dec(n / 1e6) + "M" : n >= 1e4 ? Math.round(n / 1e3) + "k" : n >= 1e3 ? dec(n / 1e3) + "k" : String(n));
 
-const result = {}, failed = [];
+// --only memperbarui entri terpilih saja, entri lain tetap seperti di berkas yang ada
+const existing = only ? (existsSync(out) ? JSON.parse(readFileSync(out, "utf8")).entries : prev) : {};
+const result = { ...existing }, failed = [];
+// jumlah ikon dari paket Iconify di .cache (bila set ikon terdaftar di icons.config.json)
+const icfg = JSON.parse(readFileSync(join(root, "scripts/icons.config.json"), "utf8"));
+const iconCount = (e) => {
+  const c = icfg.find((x) => x.id === e.id); if (!c) return null;
+  const p = join(root, ".cache/node_modules/@iconify-json", c.styles[0][1], "info.json");
+  return existsSync(p) ? JSON.parse(readFileSync(p, "utf8")).total ?? null : null;
+};
 for (const e of entries.filter((x) => !only || only.includes(x.id))) {
   const old = prev[e.id] || {};
   try {
@@ -31,7 +50,7 @@ for (const e of entries.filter((x) => !only || only.includes(x.id))) {
       stars: k(r.stargazers_count), n: r.stargazers_count, push: r.pushed_at.slice(0, 10),
       created: r.created_at.slice(0, 4), issues: r.open_issues_count, lic: r.license?.spdx_id && r.license.spdx_id !== "NOASSERTION" ? spdx(r.license.spdx_id) : old.lic ?? null,
       desc: clean(r.description) ?? old.desc ?? null, topics: (r.topics ?? []).slice(0, 7), archived: r.archived,
-      baru: old.baru ?? false, count: old.count ?? null, v: old.v ?? null, dl: old.dl ?? null,
+      baru: old.baru ?? false, count: old.count ?? iconCount(e), v: old.v ?? null, dl: old.dl ?? null,
     };
     if (e.pkg) {
       try { m.v = (await get(`https://registry.npmjs.org/${e.pkg}/latest`)).version; } catch (x) { failed.push(`${e.id} npm: ${x.message}`); }

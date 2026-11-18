@@ -14,9 +14,10 @@ const dir = join(root, ".cache/node_modules/@iconify-json");
 const pkgs = [...new Set(cfg.flatMap((c) => c.styles.map((s) => s[1])))];
 const missing = pkgs.filter((p) => !existsSync(join(dir, p, "icons.json")));
 if (missing.length) {
-  console.log("mengunduh", missing.length, "paket ke .cache/");
+  // npm --no-save membuang paket lain di .cache, jadi selalu pasang semuanya
+  console.log("mengunduh", pkgs.length, "paket ke .cache/ (kurang:", missing.length + ")");
   mkdirSync(join(root, ".cache"), { recursive: true });
-  execFileSync("npm", ["install", "--prefix", join(root, ".cache"), "--no-audit", "--no-fund", "--ignore-scripts", "--no-package-lock", "--no-save", ...missing.map((p) => "@iconify-json/" + p)], { stdio: "inherit" });
+  execFileSync("npm", ["install", "--prefix", join(root, ".cache"), "--no-audit", "--no-fund", "--ignore-scripts", "--no-package-lock", "--no-save", ...pkgs.map((p) => "@iconify-json/" + p)], { stdio: "inherit" });
 }
 
 const read = (p, f) => JSON.parse(readFileSync(join(dir, p, f), "utf8"));

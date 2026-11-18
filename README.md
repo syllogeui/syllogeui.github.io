@@ -4,11 +4,11 @@ Katalog UI framework dan set ikon, dengan status perawatan dari GitHub dan npm. 
 
 Situs: https://syllogeui.github.io
 
-88 entri (62 UI framework, 18 set ikon, 8 arsip). Data per 17 November 2026.
+112 entri (85 UI framework, 19 set ikon, 8 arsip). Data per 18 November 2026.
 
 ## Fitur
 
-- Cari, filter per kategori, status, dan tag. Bandingkan beberapa entri. Tampilan galeri atau tabel.
+- Cari, filter per jenis dan per framework (React, Vue, Svelte, Angular, Solid, Web Components, React Native), status, dan tag. Bandingkan beberapa entri. Tampilan galeri atau tabel.
 - Lab ikon per set: lihat semua ikon, ubah ukuran, warna, dan gaya, salin SVG atau kode.
 - Satu halaman statis per entri, terbaca tanpa JavaScript.
 - Bahasa Indonesia dan English. Tema terang, gelap, atau ikut sistem.
@@ -43,7 +43,15 @@ node scripts/fetch.mjs --only <id>
 npm run release:check
 ```
 
-Status dihitung dari commit terakhir. UI framework: aktif sampai 45 hari, melambat sampai 180 hari, setelahnya tidak aktif. Set ikon: 120 dan 540 hari. Repo yang diarsipkan selalu tidak aktif.
+Syarat masuk: minimal 1.000 bintang atau 50 ribu unduhan npm per minggu, ada commit dalam 180 hari terakhir, punya lisensi dan dokumentasi yang bisa dibuka. Status dihitung dari commit terakhir. UI framework: aktif sampai 45 hari, melambat sampai 180 hari, setelahnya tidak aktif. Set ikon: 120 dan 540 hari. Repo yang diarsipkan selalu tidak aktif.
+
+## Mencari kandidat baru
+
+```bash
+npm run discover
+```
+
+Mencari repo yang belum ada di katalog lewat pencarian GitHub dan daftar organisasi besar, lalu menyaringnya dengan syarat masuk di atas. Hasilnya laporan di `.cache/discovery/`, tidak menambah entri otomatis. Tinjau demo, lisensi, dan framework tiap kandidat sebelum menambahkannya.
 
 ## Rilis
 
