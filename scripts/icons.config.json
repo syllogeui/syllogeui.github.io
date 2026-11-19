@@ -1373,5 +1373,57 @@
   ],
   "w": 24,
   "h": 24
+ },
+ {
+  "id": "devicon",
+  "styles": [
+   [
+    "Logo",
+    "devicon",
+    "{b}"
+   ]
+  ],
+  "sample": [
+   "react",
+   "vuejs",
+   "github",
+   "figma",
+   "docker",
+   "nodejs",
+   "typescript",
+   "tailwindcss",
+   "git",
+   "python",
+   "html5",
+   "css3",
+   "svelte",
+   "angular",
+   "nextjs",
+   "postgresql",
+   "redis",
+   "linux",
+   "apple",
+   "firefox",
+   "chrome",
+   "vscode",
+   "npm",
+   "go",
+   "rust",
+   "java",
+   "swift",
+   "kotlin",
+   "php",
+   "mysql",
+   "mongodb",
+   "sass",
+   "bootstrap",
+   "webpack",
+   "vitejs",
+   "eslint",
+   "babel",
+   "yarn"
+  ],
+  "w": 32,
+  "h": 32
  }
 ]

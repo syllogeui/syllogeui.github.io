@@ -4,7 +4,7 @@ Katalog UI framework dan set ikon, dengan status perawatan dari GitHub dan npm. 
 
 Situs: https://syllogeui.github.io
 
-122 entri (95 UI framework, 19 set ikon, 8 arsip). Data per 18 November 2026.
+137 entri (109 UI framework, 20 set ikon, 8 arsip). Data per 19 November 2026.
 
 ## Fitur
 
