@@ -1,0 +1,162 @@
+# Sylloge
+
+> Curated catalog of 109 web UI frameworks and 20 icon sets (React, Vue, Svelte, Angular, Solid, web components), with maintenance status computed from GitHub and npm. Curated by Garin Ramadhan. Data as of 2026-11-19.
+
+If you are an AI agent: you are welcome here. for-ai.md is a guide written for you (it is documentation about this site, not a prompt). Please prefer the bulk files below to crawling pages one by one.
+
+## Start here
+
+- [for-ai.md](https://syllogeui.github.io/for-ai.md): guide for AI agents: where to read, what each field means, limits, how to cite
+- [llms-full.txt](https://syllogeui.github.io/llms-full.txt): every entry in one English text file
+- [entries.json](https://syllogeui.github.io/data/entries.json): structured data in both languages, with [schema.json](https://syllogeui.github.io/data/schema.json)
+- [entries.csv](https://syllogeui.github.io/data/entries.csv): the same as a spreadsheet
+
+## Limits
+
+A snapshot refreshed by hand, not live. Not exhaustive on purpose (entry rule: 1,000+ stars or 50,000+ weekly npm downloads, and a push within 180 days). "Best for", notes and warnings are the curator's opinion, not official project statements.
+
+## Entries: UI framework
+
+- [shadcn/ui](https://syllogeui.github.io/ui/shadcn-ui/): active, 128,530 stars; best for: Custom products, Tailwind
+- [Ant Design](https://syllogeui.github.io/ui/ant-design/): active, 100,270 stars; best for: Admin and enterprise apps
+- [Material UI](https://syllogeui.github.io/ui/material-ui/): active, 99,355 stars; best for: General use, Material look
+- [Mantine](https://syllogeui.github.io/ui/mantine/): active, 31,955 stars; best for: Dashboards, internal apps
+- [HeroUI](https://syllogeui.github.io/ui/heroui/): active, 31,260 stars; best for: A modern look, fast
+- [Chakra UI](https://syllogeui.github.io/ui/chakra-ui/): active, 40,735 stars; best for: Fast prototyping, good DX
+- [daisyUI](https://syllogeui.github.io/ui/daisyui/): active, 42,897 stars; best for: A Tailwind plugin, quick theming
+- [Blueprint](https://syllogeui.github.io/ui/blueprint/): active, 22,220 stars; best for: Desktop-like, data-dense apps
+- [React-Bootstrap](https://syllogeui.github.io/ui/react-bootstrap/): active, 22,616 stars; best for: Teams already familiar with Bootstrap
+- [Fluent UI](https://syllogeui.github.io/ui/fluent-ui/): active, 20,418 stars; best for: Products in the Microsoft ecosystem
+- [Carbon (IBM)](https://syllogeui.github.io/ui/carbon-ibm/): active, 9,630 stars; best for: Enterprise, strong UX documentation
+- [Base Web (Uber)](https://syllogeui.github.io/ui/base-web-uber/): slowing, 9,031 stars; best for: Enterprise
+- [RSuite](https://syllogeui.github.io/ui/rsuite/): active, 8,697 stars; best for: Lightweight admin apps
+- [Grommet](https://syllogeui.github.io/ui/grommet/): active, 8,352 stars; best for: HPE-style apps
+- [Elastic EUI](https://syllogeui.github.io/ui/elastic-eui/): active, 6,388 stars; best for: Data and observability dashboards
+- [Primer React (GitHub)](https://syllogeui.github.io/ui/primer-react-github/): active, 3,938 stars; best for: GitHub-style interfaces
+- [Cloudscape (AWS)](https://syllogeui.github.io/ui/cloudscape-aws/): active, 2,686 stars; best for: Data-heavy consoles and admin tools
+- [Gestalt (Pinterest)](https://syllogeui.github.io/ui/gestalt-pinterest/): active, 4,386 stars; best for: A reference for consumer UI patterns
+- [Paste (Twilio)](https://syllogeui.github.io/ui/paste-twilio/): active, 483 stars; best for: An accessibility-first reference
+- [Salesforce Lightning](https://syllogeui.github.io/ui/salesforce-lightning/): active, 993 stars; best for: Salesforce ecosystem only
+- [Evergreen (Segment)](https://syllogeui.github.io/ui/evergreen-segment/): slowing, 12,427 stars
+- [Radix Primitives](https://syllogeui.github.io/ui/radix-primitives/): active, 19,528 stars
+- [Base UI (MUI)](https://syllogeui.github.io/ui/base-ui-mui/): active, 11,458 stars
+- [React Aria / Spectrum (Adobe)](https://syllogeui.github.io/ui/react-aria-spectrum-adobe/): active, 16,049 stars
+- [Ariakit](https://syllogeui.github.io/ui/ariakit/): active, 8,641 stars
+- [Headless UI](https://syllogeui.github.io/ui/headless-ui/): inactive, 28,837 stars
+- [Ark UI / Zag](https://syllogeui.github.io/ui/ark-ui-zag/): active, 5,477 stars
+- [Park UI](https://syllogeui.github.io/ui/park-ui/): inactive, 2,385 stars
+- [Kobalte](https://syllogeui.github.io/ui/kobalte/): active, 1,893 stars
+- [Tamagui](https://syllogeui.github.io/ui/tamagui/): active, 14,318 stars
+- [gluestack-ui](https://syllogeui.github.io/ui/gluestack-ui/): active, 5,360 stars
+- [Magic UI](https://syllogeui.github.io/ui/magic-ui/): active, 23,368 stars
+- [Ant Design Pro](https://syllogeui.github.io/ui/ant-design-pro/): active, 38,974 stars
+- [PrimeReact](https://syllogeui.github.io/ui/primereact/): active, 8,314 stars; best for: Business apps with lots of data components
+- [Flowbite React](https://syllogeui.github.io/ui/flowbite-react/): active, 2,151 stars; best for: Tailwind projects that want the official Flowbite components
+- [Preline UI](https://syllogeui.github.io/ui/preline-ui/): active, 6,534 stars; best for: Tailwind with ready-made components
+- [Untitled UI React](https://syllogeui.github.io/ui/untitled-ui-react/): active, 2,016 stars; best for: A modern SaaS look, with plenty of page examples
+- [Reshaped](https://syllogeui.github.io/ui/reshaped/): active, 2,255 stars; best for: Teams that want React and Figma to stay in sync
+- [Arco Design](https://syllogeui.github.io/ui/arco-design/): active, 5,772 stars; best for: Enterprise, an alternative in the Ant Design style
+- [Semi Design](https://syllogeui.github.io/ui/semi-design/): active, 10,494 stars; best for: Enterprise and AI apps
+- [TDesign React](https://syllogeui.github.io/ui/tdesign-react/): active, 980 stars; best for: Enterprise, Tencent ecosystem
+- [PatternFly React](https://syllogeui.github.io/ui/patternfly-react/): active, 859 stars; best for: Enterprise and cloud consoles
+- [Gravity UI](https://syllogeui.github.io/ui/gravity-ui/): active, 1,075 stars; best for: Data apps and internal dashboards
+- [Zendesk Garden](https://syllogeui.github.io/ui/zendesk-garden/): active, 1,110 stars; best for: Products that follow Zendesk's patterns
+- [Workday Canvas Kit](https://syllogeui.github.io/ui/workday-canvas-kit/): active, 369 stars; best for: Enterprise apps in the Workday style
+- [coss.com/ui (Origin UI)](https://syllogeui.github.io/ui/coss-com-ui-origin-ui/): active, 10,870 stars; best for: shadcn-style components for SaaS products
+- [Tremor](https://syllogeui.github.io/ui/tremor/): inactive, 3,705 stars; best for: Dashboards and charts
+- [Ant Design Mobile](https://syllogeui.github.io/ui/ant-design-mobile/): slowing, 12,102 stars; best for: Mobile web apps
+- [Ionic Framework](https://syllogeui.github.io/ui/ionic-framework/): active, 52,759 stars; best for: Hybrid mobile apps (iOS, Android, web)
+- [Web Awesome](https://syllogeui.github.io/ui/web-awesome/): active, 1,406 stars; best for: Framework-agnostic components that also work in React
+- [Lobe UI](https://syllogeui.github.io/ui/lobe-ui/): active, 2,278 stars; best for: Chat interfaces and AI apps
+- [UI SDK (Vercel Labs)](https://syllogeui.github.io/ui/ui-sdk-vercel-labs/): active, 5,944 stars; best for: Unstyled UI behavior (focus, keyboard, popups, drag and drop)
+- [Arc Library](https://syllogeui.github.io/ui/arc-library/): active, 1,317 stars; best for: Components with smooth animation
+- [BoardUI](https://syllogeui.github.io/ui/boardui/): slowing, 1,224 stars; best for: Agentic interfaces (agent workflows)
+- [affectUI](https://syllogeui.github.io/ui/affectui/): active, 890 stars; best for: Showing what AI agents do (tool calls, traces, agent trees)
+- [Looseleaf](https://syllogeui.github.io/ui/looseleaf/): active, 717 stars; best for: A hand-drawn look for creative projects
+- [Appica UI](https://syllogeui.github.io/ui/appica-ui/): active, 503 stars; best for: SaaS dashboards and AI apps
+- [audiocn/ui](https://syllogeui.github.io/ui/audiocn-ui/): active, 311 stars; best for: Audio apps (mixers, level meters, knobs)
+- [HextaUI](https://syllogeui.github.io/ui/hextaui/): active, 167 stars; best for: Ready-made blocks on top of shadcn/ui
+- [Detent UI](https://syllogeui.github.io/ui/detent-ui/): active, 107 stars; best for: Components with state and motion already handled
+- [shadcn-m3e](https://syllogeui.github.io/ui/shadcn-m3e/): active, 64 stars; best for: A Material 3 Expressive look on top of shadcn
+- [Plasma UI](https://syllogeui.github.io/ui/plasma-ui/): active, 336 stars; best for: Experimental liquid glass effects (WebGL)
+- [Astryx](https://syllogeui.github.io/ui/astryx-meta/): active, 30,680 stars; best for: A full design system that is also ready for AI agents
+- [AI Elements](https://syllogeui.github.io/ui/ai-elements-vercel/): active, 2,532 stars; best for: Chat interfaces and AI apps on top of shadcn/ui
+- [A2UI](https://syllogeui.github.io/ui/a2ui/): active, 17,625 stars; best for: Apps whose interface is composed by an AI agent
+- [Reka UI](https://syllogeui.github.io/ui/reka-ui/): active, 6,968 stars; best for: The base for your own design system in Vue
+- [PrimeVue](https://syllogeui.github.io/ui/primevue/): slowing, 14,449 stars; best for: Business apps with lots of data components
+- [Element Plus](https://syllogeui.github.io/ui/element-plus/): active, 27,860 stars; best for: Admin panels and dashboards in Vue 3
+- [Vant](https://syllogeui.github.io/ui/vant/): active, 24,429 stars; best for: Mobile web apps in Vue
+- [Skeleton](https://syllogeui.github.io/ui/skeleton-svelte/): active, 6,093 stars; best for: Svelte with a Tailwind-based design system
+- [PrimeNG](https://syllogeui.github.io/ui/primeng/): slowing, 12,486 stars; best for: Business apps with lots of data components in Angular
+- [NG-ZORRO](https://syllogeui.github.io/ui/ng-zorro-antd/): active, 9,195 stars; best for: Admin and enterprise apps in Angular
+- [Angular Material](https://syllogeui.github.io/ui/angular-material/): active, 25,048 stars; best for: Material Design in Angular
+- [Bits UI](https://syllogeui.github.io/ui/bits-ui/): active, 3,669 stars; best for: The base for your own design system in Svelte
+- [shadcn-svelte](https://syllogeui.github.io/ui/shadcn-svelte/): active, 9,269 stars; best for: Svelte products with the shadcn look
+- [Vuetify](https://syllogeui.github.io/ui/vuetify/): active, 41,045 stars; best for: Material Design in Vue
+- [Quasar](https://syllogeui.github.io/ui/quasar/): active, 27,197 stars; best for: One codebase for web, mobile, and desktop
+- [Nuxt UI](https://syllogeui.github.io/ui/nuxt-ui/): active, 7,093 stars; best for: Nuxt and Vue projects with Tailwind
+- [Naive UI](https://syllogeui.github.io/ui/naive-ui/): active, 18,611 stars; best for: Vue 3 apps with TypeScript
+- [Material Web](https://syllogeui.github.io/ui/material-web/): active, 11,459 stars; best for: Material Design 3 without a specific framework
+- [Spectrum Web Components](https://syllogeui.github.io/ui/spectrum-web-components/): active, 1,584 stars; best for: Adobe Spectrum-style products without a specific framework
+- [Carbon Components Svelte](https://syllogeui.github.io/ui/carbon-components-svelte/): active, 2,926 stars; best for: IBM Carbon-style enterprise apps in Svelte
+- [Flowbite Svelte](https://syllogeui.github.io/ui/flowbite-svelte/): slowing, 2,793 stars; best for: Svelte projects with Tailwind
+- [Flowbite](https://syllogeui.github.io/ui/flowbite/): slowing, 9,388 stars; best for: Tailwind with plain HTML, no framework needed
+- [Calcite Design System](https://syllogeui.github.io/ui/calcite-design-system/): active, 391 stars; best for: Map and geospatial apps (ArcGIS ecosystem)
+- [Cloudflare Kumo](https://syllogeui.github.io/ui/cloudflare-kumo/): active, 4,246 stars; best for: Web apps in the Cloudflare dashboard style
+- [Taiga UI](https://syllogeui.github.io/ui/taiga-ui/): active, 4,097 stars; best for: Angular apps with a complete set of components
+- [Varlet](https://syllogeui.github.io/ui/varlet/): active, 5,347 stars; best for: Mobile and desktop apps in Vue 3
+- [Arco Design Vue](https://syllogeui.github.io/ui/arco-design-vue/): active, 3,123 stars; best for: Enterprise apps in Vue 3
+- [React Native UI Lib](https://syllogeui.github.io/ui/react-native-ui-lib/): active, 7,158 stars; best for: React Native apps with ready-made components
+- [Primer CSS](https://syllogeui.github.io/ui/primer-css/): active, 13,060 stars; best for: The GitHub look with plain HTML and CSS
+- [Amplify UI](https://syllogeui.github.io/ui/amplify-ui/): active, 1,145 stars; best for: Apps built on AWS Amplify (sign-in, storage, and more)
+- [MUI X](https://syllogeui.github.io/ui/mui-x/): active, 5,882 stars; best for: Data-heavy apps: tables, dates, and charts
+- [Radix Themes](https://syllogeui.github.io/ui/radix-themes/): inactive, 8,859 stars; best for: Pre-styled components built on Radix
+- [ElevenLabs UI](https://syllogeui.github.io/ui/elevenlabs-ui/): active, 2,460 stars; best for: Voice and multimodal agent interfaces
+- [Basecoat](https://syllogeui.github.io/ui/basecoat-ui/): active, 4,455 stars; best for: Projects without a JavaScript framework, just HTML and Tailwind
+- [Oruga](https://syllogeui.github.io/ui/oruga/): active, 1,163 stars; best for: Vue with the CSS framework of your choice
+- [Zard UI](https://syllogeui.github.io/ui/zard-ui/): active, 1,213 stars; best for: Angular with the shadcn/ui look
+- [Kokonut UI](https://syllogeui.github.io/ui/kokonut-ui/): active, 2,384 stars; best for: Copy-ready animated components on top of shadcn/ui
+- [UI Kitten](https://syllogeui.github.io/ui/react-native-ui-kitten/): active, 10,667 stars; best for: React Native apps with the Eva Design System
+- [Fusion Design](https://syllogeui.github.io/ui/alibaba-fusion/): active, 4,681 stars; best for: Enterprise apps in the Alibaba style
+- [React Bits](https://syllogeui.github.io/ui/react-bits/): active, 52,281 stars; best for: Interactive effects and animation for pages
+- [Motion Primitives](https://syllogeui.github.io/ui/motion-primitives/): slowing, 6,986 stars; best for: Interfaces with smooth animation
+- [AI Elements Vue](https://syllogeui.github.io/ui/ai-elements-vue/): active, 1,202 stars; best for: AI app interfaces in Vue
+- [Inkline](https://syllogeui.github.io/ui/inkline/): active, 1,467 stars; best for: Vue 3 and Nuxt apps with a complete component foundation
+- [Ant Design Web3](https://syllogeui.github.io/ui/ant-design-web3/): slowing, 1,149 stars; best for: dApps: connecting crypto wallets
+- [Onsen UI](https://syllogeui.github.io/ui/onsen-ui/): slowing, 8,852 stars; best for: Hybrid mobile apps with HTML5
+- [Animal Island UI](https://syllogeui.github.io/ui/animal-island-ui/): active, 5,172 stars; best for: Products with a cute (kawaii) look
+- [React95](https://syllogeui.github.io/ui/react95/): active, 3,846 stars; best for: Interfaces in the Windows 95 style
+
+## Entries: Icon set
+
+- [Lucide](https://syllogeui.github.io/icons/lucide/): active, 25,857 stars; best for: Clean lines, the default in shadcn/ui
+- [Phosphor Icons](https://syllogeui.github.io/icons/phosphor/): slowing, 403 stars; best for: You need one set with several weights
+- [Tabler Icons](https://syllogeui.github.io/icons/tabler-icons/): active, 22,714 stars; best for: A large set for dashboards
+- [Heroicons](https://syllogeui.github.io/icons/heroicons/): slowing, 23,915 stars; best for: Tailwind projects
+- [Radix Icons](https://syllogeui.github.io/icons/radix-icons/): slowing, 2,708 stars; best for: Pairs with Radix and shadcn
+- [Iconoir](https://syllogeui.github.io/icons/iconoir/): active, 4,648 stars; best for: A delicate line style
+- [Feather](https://syllogeui.github.io/icons/feather/): inactive, 26,043 stars; best for: Older projects that already use it
+- [Boxicons](https://syllogeui.github.io/icons/boxicons/): slowing, 3,178 stars; best for: You need logos and general icons in one set
+- [Font Awesome Free](https://syllogeui.github.io/icons/font-awesome-free/): slowing, 77,044 stars; best for: Long-established ecosystem with plenty of tutorials
+- [Bootstrap Icons](https://syllogeui.github.io/icons/bootstrap-icons/): active, 8,185 stars; best for: Bootstrap projects and plain HTML
+- [Remix Icon](https://syllogeui.github.io/icons/remix-icon/): slowing, 8,460 stars; best for: A neutral set of 3,000+ icons
+- [Ionicons](https://syllogeui.github.io/icons/ionicons/): active, 18,257 stars; best for: Ionic and mobile apps
+- [Material Symbols](https://syllogeui.github.io/icons/material-symbols/): active, 54,330 stars; best for: Material Design and Android
+- [Fluent System Icons](https://syllogeui.github.io/icons/fluent-icons/): active, 10,994 stars; best for: Microsoft-style products
+- [Carbon Icons](https://syllogeui.github.io/icons/carbon-icons/): active, 9,630 stars; best for: Enterprise and data products
+- [Octicons (GitHub)](https://syllogeui.github.io/icons/octicons/): active, 8,785 stars; best for: Developer tools
+- [Simple Icons](https://syllogeui.github.io/icons/simple-icons/): active, 26,236 stars; best for: Technology and brand logos
+- [Iconify](https://syllogeui.github.io/icons/iconify/): active, 6,411 stars; best for: You need many sets through one API
+- [Hugeicons](https://syllogeui.github.io/icons/hugeicons/): active, 1,236 stars; best for: You want a large set in one rounded line style
+- [Devicon](https://syllogeui.github.io/icons/devicon/): active, 11,877 stars; best for: Logos of programming languages and developer tools
+
+## Entries: Archive
+
+- [Polaris React (Shopify)](https://syllogeui.github.io/archive/polaris-react-shopify/): archived, 6,146 stars
+- [Semantic-UI-React](https://syllogeui.github.io/archive/semantic-ui-react/): inactive, 13,196 stars
+- [Rebass](https://syllogeui.github.io/archive/rebass/): inactive, 7,898 stars
+- [react-desktop](https://syllogeui.github.io/archive/react-desktop/): inactive, 9,470 stars
+- [cf-ui (Cloudflare)](https://syllogeui.github.io/archive/cf-ui-cloudflare/): archived, 1,290 stars
+- [Pluralsight Design System (classic)](https://syllogeui.github.io/archive/pluralsight-design-system-classic/): archived, 295 stars
+- [Hack Club Design System](https://syllogeui.github.io/archive/hack-club-design-system/): archived, 159 stars
+- [Toolpad (MUI)](https://syllogeui.github.io/archive/toolpad-mui/): archived, 1,703 stars

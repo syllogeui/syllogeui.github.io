@@ -1,0 +1,1838 @@
+# Sylloge: all entries
+
+> Curated catalog of 109 web UI frameworks and 20 icon sets (React, Vue, Svelte, Angular, Solid, web components), with maintenance status computed from GitHub and npm. Curated by Garin Ramadhan. Data as of 2026-11-19.
+
+Limits: A snapshot refreshed by hand, not live. Not exhaustive on purpose (entry rule: 1,000+ stars or 50,000+ weekly npm downloads, and a push within 180 days). "Best for", notes and warnings are the curator's opinion, not official project statements.
+Read https://syllogeui.github.io/for-ai.md (a guide written for AI agents) for field meanings and how status is computed. Indonesian text for each entry is in https://syllogeui.github.io/data/entries.json.
+
+## UI framework (109)
+
+### shadcn/ui
+- Page: https://syllogeui.github.io/ui/shadcn-ui/
+- Type: UI framework, Tailwind and copy-paste
+- Status: active (last push 2026-11-18)
+- Stars: 128,530
+- npm: shadcn 4.23.0, 18,886,105 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: Tailwind
+- Best for (curator's opinion): Custom products, Tailwind
+- Curator note: The code is copied into your project instead of installed as a dependency. The de facto standard right now
+- Repo: https://github.com/shadcn-ui/ui
+- Site: https://ui.shadcn.com
+
+### Ant Design
+- Page: https://syllogeui.github.io/ui/ant-design/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-19)
+- Stars: 100,270
+- npm: antd 6.7.1, 5,252,879 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): Admin and enterprise apps
+- Curator note: Very complete, but it has a strong "Ant" look and needs theming for other brands
+- Repo: https://github.com/ant-design/ant-design
+- Site: https://ant.design
+
+### Material UI
+- Page: https://syllogeui.github.io/ui/material-ui/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-19)
+- Stars: 99,355
+- npm: @mui/material 9.5.0, 14,324,533 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): General use, Material look
+- Curator note: The largest ecosystem (DataGrid and more). The repo moved to `mui/`
+- Repo: https://github.com/mui/material-ui
+- Site: https://mui.com/material-ui/
+
+### Mantine
+- Page: https://syllogeui.github.io/ui/mantine/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-18)
+- Stars: 31,955
+- npm: @mantine/core 9.8.1, 3,708,251 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: CSS modules
+- Best for (curator's opinion): Dashboards, internal apps
+- Curator note: Great hooks, with forms, dates, and charts built in
+- Repo: https://github.com/mantinedev/mantine
+- Site: https://mantine.dev
+
+### HeroUI
+- Page: https://syllogeui.github.io/ui/heroui/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-18)
+- Stars: 31,260
+- npm: @heroui/react 3.2.7, 1,193,186 downloads/week
+- License: Apache-2.0
+- Frameworks: React
+- Styling: Tailwind
+- Best for (curator's opinion): A modern look, fast
+- Curator note: Formerly NextUI. Built on Tailwind and React Aria
+- Repo: https://github.com/heroui-inc/heroui
+- Site: https://heroui.com
+
+### Chakra UI
+- Page: https://syllogeui.github.io/ui/chakra-ui/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-18)
+- Stars: 40,735
+- npm: @chakra-ui/react 3.38.0, 2,267,046 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): Fast prototyping, good DX
+- Curator note: The new version is built on Ark and Zag
+- Repo: https://github.com/chakra-ui/chakra-ui
+- Site: https://chakra-ui.com
+
+### daisyUI
+- Page: https://syllogeui.github.io/ui/daisyui/
+- Type: UI framework, Tailwind and copy-paste
+- Status: active (last push 2026-11-16)
+- Stars: 42,897
+- npm: daisyui 5.8.1, 1,469,648 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: Tailwind
+- Best for (curator's opinion): A Tailwind plugin, quick theming
+- Curator note: Plain CSS classes, not tied to React
+- Repo: https://github.com/saadeghi/daisyui
+- Site: https://daisyui.com
+
+### Blueprint
+- Page: https://syllogeui.github.io/ui/blueprint/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-19)
+- Stars: 22,220
+- npm: @blueprintjs/core 6.23.1, 367,720 downloads/week
+- License: Apache-2.0
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): Desktop-like, data-dense apps
+- Curator note: Dense layouts that suit analytics tools
+- Repo: https://github.com/palantir/blueprint
+- Site: https://blueprintjs.com/
+
+### React-Bootstrap
+- Page: https://syllogeui.github.io/ui/react-bootstrap/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-18)
+- Stars: 22,616
+- npm: react-bootstrap 2.10.10, 1,645,102 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): Teams already familiar with Bootstrap
+- Curator note: Safe and boring (which is a good thing)
+- Repo: https://github.com/react-bootstrap/react-bootstrap
+- Site: https://react-bootstrap.github.io/
+
+### Fluent UI
+- Page: https://syllogeui.github.io/ui/fluent-ui/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-18)
+- Stars: 20,418
+- npm: @fluentui/react-components 9.75.2, 620,847 downloads/week
+- License: cek lisensi
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): Products in the Microsoft ecosystem
+- Curator note: The license is listed as NOASSERTION, so check it before use
+- Repo: https://github.com/microsoft/fluentui
+- Site: https://react.fluentui.dev
+
+### Carbon (IBM)
+- Page: https://syllogeui.github.io/ui/carbon-ibm/
+- Type: UI framework, Corporate design systems
+- Status: active (last push 2026-11-18)
+- Stars: 9,630
+- npm: @carbon/react 1.121.0, 168,271 downloads/week
+- License: Apache-2.0
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): Enterprise, strong UX documentation
+- Curator note: Mature design guidelines
+- Repo: https://github.com/carbon-design-system/carbon
+- Site: https://www.carbondesignsystem.com
+
+### Base Web (Uber)
+- Page: https://syllogeui.github.io/ui/base-web-uber/
+- Type: UI framework, Corporate design systems
+- Status: slowing (last push 2026-09-25)
+- Stars: 9,031
+- npm: baseui 18.2.0, 129,356 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): Enterprise
+- Curator note: Rarely updated
+- Repo: https://github.com/uber/baseweb
+- Site: https://baseweb.design
+
+### RSuite
+- Page: https://syllogeui.github.io/ui/rsuite/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-15)
+- Stars: 8,697
+- npm: rsuite 6.2.5, 211,192 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): Lightweight admin apps
+- Warning: The official site rsuitejs.com returned HTTP 402 (deployment paused) when checked on Nov 17, 2026, so the demo can't be opened. The package itself is still being released on npm.
+- Repo: https://github.com/rsuite/rsuite
+- Site: https://rsuitejs.com
+
+### Grommet
+- Page: https://syllogeui.github.io/ui/grommet/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-19)
+- Stars: 8,352
+- npm: grommet 2.58.0, 57,616 downloads/week
+- License: Apache-2.0
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): HPE-style apps
+- Repo: https://github.com/grommet/grommet
+- Site: https://grommet.io
+
+### Elastic EUI
+- Page: https://syllogeui.github.io/ui/elastic-eui/
+- Type: UI framework, Corporate design systems
+- Status: active (last push 2026-11-19)
+- Stars: 6,388
+- npm: @elastic/eui 123.5.0, 182,917 downloads/week
+- License: cek lisensi
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): Data and observability dashboards
+- Curator note: The old link in the source repo was wrong (it pointed to Evergreen)
+- Repo: https://github.com/elastic/eui
+- Site: https://eui.elastic.co/
+
+### Primer React (GitHub)
+- Page: https://syllogeui.github.io/ui/primer-react-github/
+- Type: UI framework, Corporate design systems
+- Status: active (last push 2026-11-19)
+- Stars: 3,938
+- npm: @primer/react 38.46.0, 84,254 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): GitHub-style interfaces
+- Repo: https://github.com/primer/react
+- Site: https://primer.style/product/getting-started/react/
+
+### Cloudscape (AWS)
+- Page: https://syllogeui.github.io/ui/cloudscape-aws/
+- Type: UI framework, Corporate design systems
+- Status: active (last push 2026-11-19)
+- Stars: 2,686
+- npm: @cloudscape-design/components 3.0.1419, 192,804 downloads/week
+- License: Apache-2.0
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): Data-heavy consoles and admin tools
+- Curator note: A very complete set of design patterns
+- Repo: https://github.com/cloudscape-design/components
+- Site: https://cloudscape.design/
+
+### Gestalt (Pinterest)
+- Page: https://syllogeui.github.io/ui/gestalt-pinterest/
+- Type: UI framework, Corporate design systems
+- Status: active (last push 2026-10-05)
+- Stars: 4,386
+- npm: gestalt 177.0.12, 17,272 downloads/week
+- License: Apache-2.0
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): A reference for consumer UI patterns
+- Repo: https://github.com/pinterest/gestalt
+- Site: https://gestalt.pinterest.systems/
+
+### Paste (Twilio)
+- Page: https://syllogeui.github.io/ui/paste-twilio/
+- Type: UI framework, Corporate design systems
+- Status: active (last push 2026-11-01)
+- Stars: 483
+- npm: @twilio-paste/core 21.5.0, 20,852 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): An accessibility-first reference
+- Repo: https://github.com/twilio-labs/paste
+- Site: https://paste-dsys.com/
+
+### Salesforce Lightning
+- Page: https://syllogeui.github.io/ui/salesforce-lightning/
+- Type: UI framework, Corporate design systems
+- Status: active (last push 2026-11-19)
+- Stars: 993
+- npm: @salesforce/design-system-react 0.10.66, 19,452 downloads/week
+- License: BSD-3
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): Salesforce ecosystem only
+- Warning: The old docs site (react.lightningdesignsystem.com) now redirects to a GitHub page. When checked on Nov 17, 2026, there was no interactive demo.
+- Repo: https://github.com/salesforce/design-system-react
+- Site: https://github.com/salesforce/design-system-react
+
+### Evergreen (Segment)
+- Page: https://syllogeui.github.io/ui/evergreen-segment/
+- Type: UI framework, Corporate design systems
+- Status: slowing (last push 2026-06-25)
+- Stars: 12,427
+- npm: evergreen-ui 7.1.9, 15,144 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: CSS-in-JS
+- Curator note: Low activity
+- Repo: https://github.com/segmentio/evergreen
+- Site: https://evergreen.segment.com
+
+### Radix Primitives
+- Page: https://syllogeui.github.io/ui/radix-primitives/
+- Type: UI framework, Headless and primitives
+- Status: active (last push 2026-10-14)
+- Stars: 19,528
+- npm: radix-ui 1.8.1, 29,700,982 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: Tanpa gaya
+- Curator note: The foundation of shadcn/ui. Updates have slowed down
+- Repo: https://github.com/radix-ui/primitives
+- Site: https://radix-ui.com/primitives
+
+### Base UI (MUI)
+- Page: https://syllogeui.github.io/ui/base-ui-mui/
+- Type: UI framework, Headless and primitives
+- Status: active (last push 2026-11-19)
+- Stars: 11,458
+- npm: @base-ui/react 1.9.0, 31,495,847 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: Tanpa gaya
+- Curator note: The replacement for MUI Base, very active
+- Repo: https://github.com/mui/base-ui
+- Site: https://base-ui.com
+
+### React Aria / Spectrum (Adobe)
+- Page: https://syllogeui.github.io/ui/react-aria-spectrum-adobe/
+- Type: UI framework, Headless and primitives
+- Status: active (last push 2026-11-19)
+- Stars: 16,049
+- npm: react-aria-components 1.22.1, 9,751,080 downloads/week
+- License: Apache-2.0
+- Frameworks: React
+- Styling: Tanpa gaya
+- Curator note: The best standard for accessibility and i18n
+- Repo: https://github.com/adobe/react-spectrum
+- Site: https://react-spectrum.adobe.com
+
+### Ariakit
+- Page: https://syllogeui.github.io/ui/ariakit/
+- Type: UI framework, Headless and primitives
+- Status: active (last push 2026-11-19)
+- Stars: 8,641
+- npm: @ariakit/react 0.4.43, 2,177,441 downloads/week
+- Frameworks: React
+- Styling: Tanpa gaya
+- Curator note: No license detected, so check first
+- Repo: https://github.com/ariakit/ariakit
+- Site: https://ariakit.com
+
+### Headless UI
+- Page: https://syllogeui.github.io/ui/headless-ui/
+- Type: UI framework, Headless and primitives
+- Status: inactive (last push 2026-04-13)
+- Stars: 28,837
+- npm: @headlessui/react 2.2.10, 10,014,992 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: Tanpa gaya
+- Curator note: Enough for Tailwind projects, but a small component set
+- Repo: https://github.com/tailwindlabs/headlessui
+- Site: https://headlessui.com
+
+### Ark UI / Zag
+- Page: https://syllogeui.github.io/ui/ark-ui-zag/
+- Type: UI framework, Headless and primitives
+- Status: active (last push 2026-11-19)
+- Stars: 5,477
+- npm: @ark-ui/react 5.40.0, 1,489,225 downloads/week
+- License: MIT
+- Frameworks: React, Vue, Solid, Svelte
+- Styling: Tanpa gaya
+- Curator note: State machines, works across frameworks
+- Repo: https://github.com/chakra-ui/ark
+- Site: https://ark-ui.com
+
+### Park UI
+- Page: https://syllogeui.github.io/ui/park-ui/
+- Type: UI framework, Headless and primitives
+- Status: inactive (last push 2026-04-10)
+- Stars: 2,385
+- License: MIT
+- Frameworks: React, Vue, Solid
+- Styling: Tailwind
+- Curator note: Styles on top of Ark, in the shadcn manner
+- Repo: https://github.com/chakra-ui/park-ui
+- Site: https://park-ui.com
+
+### Kobalte
+- Page: https://syllogeui.github.io/ui/kobalte/
+- Type: UI framework, Headless and primitives
+- Status: active (last push 2026-10-29)
+- Stars: 1,893
+- npm: @kobalte/core 0.13.14, 6,157,215 downloads/week
+- License: MIT
+- Frameworks: Solid
+- Styling: Tanpa gaya
+- Curator note: For SolidJS, not React
+- Repo: https://github.com/kobaltedev/kobalte
+- Site: https://kobalte.dev/
+
+### Tamagui
+- Page: https://syllogeui.github.io/ui/tamagui/
+- Type: UI framework, Mobile and hybrid
+- Status: active (last push 2026-11-19)
+- Stars: 14,318
+- npm: tamagui 3.3.3, 308,030 downloads/week
+- License: MIT
+- Frameworks: React Native
+- Curator note: Universal UI and styling for web and native
+- Repo: https://github.com/tamagui/tamagui
+- Site: https://tamagui.dev
+
+### gluestack-ui
+- Page: https://syllogeui.github.io/ui/gluestack-ui/
+- Type: UI framework, Mobile and hybrid
+- Status: active (last push 2026-11-17)
+- Stars: 5,360
+- Frameworks: React Native, React
+- Curator note: Native and web, shadcn-style
+- Repo: https://github.com/gluestack/gluestack-ui
+- Site: https://gluestack.io/
+
+### Magic UI
+- Page: https://syllogeui.github.io/ui/magic-ui/
+- Type: UI framework, Tailwind and copy-paste
+- Status: active (last push 2026-11-17)
+- Stars: 23,368
+- License: MIT
+- Frameworks: React
+- Styling: Tailwind
+- Curator note: Animated components, an add-on for shadcn
+- Repo: https://github.com/magicuidesign/magicui
+- Site: https://magicui.design
+
+### Ant Design Pro
+- Page: https://syllogeui.github.io/ui/ant-design-pro/
+- Type: UI framework, Dashboards and data
+- Status: active (last push 2026-11-13)
+- Stars: 38,974
+- License: MIT
+- Frameworks: React
+- Curator note: A ready-made admin template
+- Repo: https://github.com/ant-design/ant-design-pro
+- Site: https://pro.ant.design
+
+### PrimeReact
+- Page: https://syllogeui.github.io/ui/primereact/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-02)
+- Stars: 8,314
+- npm: primereact 11.2.3, 415,037 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): Business apps with lots of data components
+- Curator note: A very complete component set from the Prime ecosystem (PrimeNG, PrimeVue). Official description: 'The Most Complete React UI Component Library'.
+- Repo: https://github.com/primefaces/primereact
+- Site: https://primereact.org
+
+### Flowbite React
+- Page: https://syllogeui.github.io/ui/flowbite-react/
+- Type: UI framework, Tailwind and copy-paste
+- Status: active (last push 2026-10-30)
+- Stars: 2,151
+- npm: flowbite-react 0.12.17, 190,954 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: Tailwind
+- Best for (curator's opinion): Tailwind projects that want the official Flowbite components
+- Curator note: The React version of Flowbite. Its official site blocks automated checks (HTTP 429), so we haven't verified the demo link.
+- Warning: The official site blocked automated checks (HTTP 429) on Nov 17, 2026. It usually opens in a regular browser, but we haven't verified that.
+- Repo: https://github.com/themesberg/flowbite-react
+- Site: https://flowbite-react.com
+
+### Preline UI
+- Page: https://syllogeui.github.io/ui/preline-ui/
+- Type: UI framework, Tailwind and copy-paste
+- Status: active (last push 2026-11-11)
+- Stars: 6,534
+- npm: preline 5.1.0, 83,566 downloads/week
+- License: NOASSERTION
+- Frameworks: React
+- Styling: Tailwind
+- Best for (curator's opinion): Tailwind with ready-made components
+- Curator note: The license is listed as NOASSERTION on GitHub, so read the terms before using it commercially.
+- Repo: https://github.com/htmlstreamofficial/preline
+- Site: https://preline.co
+
+### Untitled UI React
+- Page: https://syllogeui.github.io/ui/untitled-ui-react/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-18)
+- Stars: 2,016
+- License: MIT
+- Frameworks: React
+- Styling: Tailwind
+- Best for (curator's opinion): A modern SaaS look, with plenty of page examples
+- Curator note: Built on Tailwind and React Aria (per the README), with components copied into your project. The npm package 'untitledui/icons' only contains icons, so it isn't shown.
+- Repo: https://github.com/untitleduico/react
+- Site: https://www.untitledui.com/react/
+
+### Reshaped
+- Page: https://syllogeui.github.io/ui/reshaped/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-15)
+- Stars: 2,255
+- npm: reshaped 4.3.0, 50,220 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): Teams that want React and Figma to stay in sync
+- Curator note: The official description mentions matching React and Figma components.
+- Repo: https://github.com/reshaped-ui/reshaped
+- Site: https://reshaped.so
+
+### Arco Design
+- Page: https://syllogeui.github.io/ui/arco-design/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-13)
+- Stars: 5,772
+- npm: @arco-design/web-react 2.66.18, 114,814 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): Enterprise, an alternative in the Ant Design style
+- Curator note: From ByteDance. The docs are in Chinese and English.
+- Repo: https://github.com/arco-design/arco-design
+- Site: https://arco.design
+
+### Semi Design
+- Page: https://syllogeui.github.io/ui/semi-design/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-16)
+- Stars: 10,494
+- npm: @douyinfe/semi-ui 2.105.0, 28,658 downloads/week
+- License: NOASSERTION
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): Enterprise and AI apps
+- Curator note: From Douyin. The license is listed as NOASSERTION, so check it manually.
+- Repo: https://github.com/DouyinFE/semi-design
+- Site: https://semi.design
+
+### TDesign React
+- Page: https://syllogeui.github.io/ui/tdesign-react/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-19)
+- Stars: 980
+- npm: tdesign-react 1.18.6, 29,184 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): Enterprise, Tencent ecosystem
+- Curator note: Comes in mobile, desktop, and several other framework versions.
+- Repo: https://github.com/Tencent/tdesign-react
+- Site: https://tdesign.tencent.com/react
+
+### PatternFly React
+- Page: https://syllogeui.github.io/ui/patternfly-react/
+- Type: UI framework, Corporate design systems
+- Status: active (last push 2026-11-18)
+- Stars: 859
+- npm: @patternfly/react-core 6.7.0, 159,904 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): Enterprise and cloud consoles
+- Curator note: Red Hat's design system. Few stars, but regular releases.
+- Repo: https://github.com/patternfly/patternfly-react
+- Site: https://pf-react-staging.patternfly.org/
+
+### Gravity UI
+- Page: https://syllogeui.github.io/ui/gravity-ui/
+- Type: UI framework, Corporate design systems
+- Status: active (last push 2026-11-18)
+- Stars: 1,075
+- npm: @gravity-ui/uikit 8.1.0, 34,694 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): Data apps and internal dashboards
+- Curator note: From Yandex. The repo has no official description.
+- Repo: https://github.com/gravity-ui/uikit
+- Site: https://gravity-ui.com
+
+### Zendesk Garden
+- Page: https://syllogeui.github.io/ui/zendesk-garden/
+- Type: UI framework, Corporate design systems
+- Status: active (last push 2026-11-18)
+- Stars: 1,110
+- License: Apache-2.0
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): Products that follow Zendesk's patterns
+- Curator note: Split into many small packages, so npm download numbers aren't shown.
+- Repo: https://github.com/zendeskgarden/react-components
+- Site: https://zendeskgarden.github.io/react-components/
+
+### Workday Canvas Kit
+- Page: https://syllogeui.github.io/ui/workday-canvas-kit/
+- Type: UI framework, Corporate design systems
+- Status: active (last push 2026-11-10)
+- Stars: 369
+- npm: @workday/canvas-kit-react 16.2.21, 7,178 downloads/week
+- License: Apache-2.0
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): Enterprise apps in the Workday style
+- Curator note: Few stars, and aimed at the Workday ecosystem.
+- Repo: https://github.com/Workday/canvas-kit
+- Site: https://workday.github.io/canvas-kit/
+
+### coss.com/ui (Origin UI)
+- Page: https://syllogeui.github.io/ui/coss-com-ui-origin-ui/
+- Type: UI framework, Tailwind and copy-paste
+- Status: active (last push 2026-11-18)
+- Stars: 10,870
+- License: MIT
+- Frameworks: React
+- Styling: Tailwind
+- Best for (curator's opinion): shadcn-style components for SaaS products
+- Curator note: Formerly Origin UI, now the official design system of Cal.com.
+- Repo: https://github.com/cosscom/ui
+- Site: https://coss.com
+
+### Tremor
+- Page: https://syllogeui.github.io/ui/tremor/
+- Type: UI framework, Dashboards and data
+- Status: inactive (last push 2025-10-10)
+- Stars: 3,705
+- npm: @tremor/react 3.18.7, 567,952 downloads/week
+- License: Apache-2.0
+- Frameworks: React
+- Styling: Tailwind
+- Best for (curator's opinion): Dashboards and charts
+- Curator note: Copy and paste on top of Tailwind and Radix. Last push was in Oct 2025, so it's inactive.
+- Repo: https://github.com/tremorlabs/tremor
+- Site: https://tremor.so
+
+### Ant Design Mobile
+- Page: https://syllogeui.github.io/ui/ant-design-mobile/
+- Type: UI framework, Mobile and hybrid
+- Status: slowing (last push 2026-09-14)
+- Stars: 12,102
+- npm: antd-mobile 5.43.0, 97,888 downloads/week
+- License: MIT
+- Frameworks: React
+- Best for (curator's opinion): Mobile web apps
+- Curator note: The mobile version of Ant Design, installed separately.
+- Repo: https://github.com/ant-design/ant-design-mobile
+- Site: https://mobile.ant.design
+
+### Ionic Framework
+- Page: https://syllogeui.github.io/ui/ionic-framework/
+- Type: UI framework, Mobile and hybrid
+- Status: active (last push 2026-11-19)
+- Stars: 52,759
+- npm: @ionic/react 9.0.12, 163,257 downloads/week
+- License: MIT
+- Frameworks: React, Vue, Angular
+- Best for (curator's opinion): Hybrid mobile apps (iOS, Android, web)
+- Curator note: Built on web components with React bindings. The most established option in this category.
+- Repo: https://github.com/ionic-team/ionic-framework
+- Site: https://ionicframework.com
+
+### Web Awesome
+- Page: https://syllogeui.github.io/ui/web-awesome/
+- Type: UI framework, Web components
+- Status: active (last push 2026-11-18)
+- Stars: 1,406
+- npm: @awesome.me/webawesome 3.15.0, 197,583 downloads/week
+- License: MIT
+- Frameworks: Web Components
+- Best for (curator's opinion): Framework-agnostic components that also work in React
+- Curator note: The successor to Shoelace. Built on web components, not pure React components.
+- Repo: https://github.com/shoelace-style/webawesome
+- Site: https://webawesome.com
+
+### Lobe UI
+- Page: https://syllogeui.github.io/ui/lobe-ui/
+- Type: UI framework, UI for AI and agents
+- Status: active (last push 2026-11-19)
+- Stars: 2,278
+- npm: @lobehub/ui 6.16.2, 627,917 downloads/week
+- License: MIT
+- Frameworks: React
+- Best for (curator's opinion): Chat interfaces and AI apps
+- Curator note: From the LobeHub project. npm downloads are high for its size.
+- Repo: https://github.com/lobehub/lobe-ui
+- Site: https://ui.lobehub.com
+
+### UI SDK (Vercel Labs)
+- Page: https://syllogeui.github.io/ui/ui-sdk-vercel-labs/
+- Type: UI framework, UI for AI and agents
+- Status: active (last push 2026-11-19)
+- Stars: 5,944
+- npm: @ui-sdk/core 0.1.0-beta.10, 295,508 downloads/week
+- License: Apache-2.0
+- Frameworks: React
+- Best for (curator's opinion): Unstyled UI behavior (focus, keyboard, popups, drag and drop)
+- Curator note: The repo was created on Oct 26, 2026. Adapters for React, Vue, Svelte, Solid, and Web Components. Still very new.
+- Repo: https://github.com/vercel-labs/ui
+- Site: https://ui-sdk.dev
+
+### Arc Library
+- Page: https://syllogeui.github.io/ui/arc-library/
+- Type: UI framework, Experimental and niche
+- Status: active (last push 2026-11-01)
+- Stars: 1,317
+- License: MIT
+- Frameworks: React
+- Best for (curator's opinion): Components with smooth animation
+- Curator note: Copied into your project through shadcn. CSS modules styling. Still very new.
+- Repo: https://github.com/kuratlielia/arc-library
+- Site: https://uiarc.dev
+
+### BoardUI
+- Page: https://syllogeui.github.io/ui/boardui/
+- Type: UI framework, UI for AI and agents
+- Status: slowing (last push 2026-10-02)
+- Stars: 1,224
+- npm: boardui 0.5.9, 2,047 downloads/week
+- License: MIT
+- Frameworks: React
+- Best for (curator's opinion): Agentic interfaces (agent workflows)
+- Curator note: A React design system for agent interfaces. npm downloads are still small.
+- Repo: https://github.com/BoardUI/boardui
+- Site: https://www.boardui.com
+
+### affectUI
+- Page: https://syllogeui.github.io/ui/affectui/
+- Type: UI framework, UI for AI and agents
+- Status: active (last push 2026-11-18)
+- Stars: 890
+- License: MIT
+- Frameworks: React
+- Best for (curator's opinion): Showing what AI agents do (tool calls, traces, agent trees)
+- Curator note: Components made for agent UIs. Still very new.
+- Repo: https://github.com/flohoeller/affectui
+- Site: https://www.affectui.com
+
+### Looseleaf
+- Page: https://syllogeui.github.io/ui/looseleaf/
+- Type: UI framework, Experimental and niche
+- Status: active (last push 2026-11-01)
+- Stars: 717
+- License: MIT
+- Frameworks: React
+- Best for (curator's opinion): A hand-drawn look for creative projects
+- Curator note: shadcn-style components with a sketch-on-paper style. Great for a distinctive visual character, less so for serious apps. Still very new.
+- Repo: https://github.com/kevintngo/looseleaf
+- Site: https://kevintngo.github.io/looseleaf/
+
+### Appica UI
+- Page: https://syllogeui.github.io/ui/appica-ui/
+- Type: UI framework, Experimental and niche
+- Status: active (last push 2026-11-01)
+- Stars: 503
+- License: MIT
+- Frameworks: React
+- Best for (curator's opinion): SaaS dashboards and AI apps
+- Curator note: More than 70 themed components. Still very new.
+- Repo: https://github.com/appica-dev/appica-ui
+- Site: https://appica.dev/ui
+
+### audiocn/ui
+- Page: https://syllogeui.github.io/ui/audiocn-ui/
+- Type: UI framework, Experimental and niche
+- Status: active (last push 2026-11-02)
+- Stars: 311
+- License: NOASSERTION
+- Frameworks: React
+- Best for (curator's opinion): Audio apps (mixers, level meters, knobs)
+- Curator note: Niche. The license is listed as NOASSERTION, so check it manually.
+- Repo: https://github.com/audiocn/ui
+- Site: https://audiocn.dev
+
+### HextaUI
+- Page: https://syllogeui.github.io/ui/hextaui/
+- Type: UI framework, Tailwind and copy-paste
+- Status: active (last push 2026-11-16)
+- Stars: 167
+- License: MIT
+- Frameworks: React
+- Styling: Tailwind
+- Best for (curator's opinion): Ready-made blocks on top of shadcn/ui
+- Curator note: Built on Base UI. Few stars.
+- Repo: https://github.com/preetsuthar17/hextaui
+- Site: https://hextaui.com
+
+### Detent UI
+- Page: https://syllogeui.github.io/ui/detent-ui/
+- Type: UI framework, Tailwind and copy-paste
+- Status: active (last push 2026-11-19)
+- Stars: 107
+- License: MIT
+- Frameworks: React
+- Styling: Tailwind
+- Best for (curator's opinion): Components with state and motion already handled
+- Curator note: Installed through the shadcn CLI. Still few stars.
+- Repo: https://github.com/ds-spec/detent-ui
+- Site: https://detentui.com
+
+### shadcn-m3e
+- Page: https://syllogeui.github.io/ui/shadcn-m3e/
+- Type: UI framework, Tailwind and copy-paste
+- Status: active (last push 2026-10-24)
+- Stars: 64
+- License: MIT
+- Frameworks: React
+- Styling: Tailwind
+- Best for (curator's opinion): A Material 3 Expressive look on top of shadcn
+- Curator note: A small experiment that brings two design systems together.
+- Repo: https://github.com/Crysta1221/shadcn-m3e
+- Site: https://shadcn-m3e.crystaworld.dev
+
+### Plasma UI
+- Page: https://syllogeui.github.io/ui/plasma-ui/
+- Type: UI framework, Experimental and niche
+- Status: active (last push 2026-11-01)
+- Stars: 336
+- License: MIT
+- Frameworks: React
+- Best for (curator's opinion): Experimental liquid glass effects (WebGL)
+- Curator note: The README says it's still a work in progress. Good for demos, not for production.
+- Repo: https://github.com/CruxGarden/plasma-ui
+- Site: https://cruxgarden.github.io/plasma-ui/
+
+### Astryx
+- Page: https://syllogeui.github.io/ui/astryx-meta/
+- Type: UI framework, Corporate design systems
+- Status: active (last push 2026-11-19)
+- Stars: 30,680
+- npm: @astryxdesign/core 0.7.16, 661,137 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): A full design system that is also ready for AI agents
+- Curator note: From Meta. More than 180 components on React 19 and StyleX, with a CLI and MCP for agents. Still in beta.
+- Repo: https://github.com/meta/astryx
+- Site: http://astryx.atmeta.com
+
+### AI Elements
+- Page: https://syllogeui.github.io/ui/ai-elements-vercel/
+- Type: UI framework, UI for AI and agents
+- Status: active (last push 2026-10-14)
+- Stars: 2,532
+- npm: ai-elements 1.9.1, 159,692 downloads/week
+- Frameworks: React
+- Styling: Tailwind
+- Best for (curator's opinion): Chat interfaces and AI apps on top of shadcn/ui
+- Curator note: From Vercel, installed through the shadcn registry. The license is Apache-2.0 according to npm, but GitHub does not detect it.
+- Repo: https://github.com/vercel/ai-elements
+- Site: https://elements.ai-sdk.dev
+
+### A2UI
+- Page: https://syllogeui.github.io/ui/a2ui/
+- Type: UI framework, UI for AI and agents
+- Status: active (last push 2026-11-19)
+- Stars: 17,625
+- npm: @a2ui/react 0.15.0, 351,324 downloads/week
+- License: Apache-2.0
+- Frameworks: React, Angular, Web Components
+- Best for (curator's opinion): Apps whose interface is composed by an AI agent
+- Curator note: The agent streams layout data, and the app renders it with its own components. There are React, Angular, and Lit packages. Still on version 0.x.
+- Repo: https://github.com/a2ui-project/a2ui
+- Site: https://a2ui.org/
+
+### Reka UI
+- Page: https://syllogeui.github.io/ui/reka-ui/
+- Type: UI framework, Headless and primitives
+- Status: active (last push 2026-11-18)
+- Stars: 6,968
+- npm: reka-ui 2.11.0, 3,153,756 downloads/week
+- License: MIT
+- Frameworks: Vue
+- Styling: Tanpa gaya
+- Best for (curator's opinion): The base for your own design system in Vue
+- Curator note: Formerly Radix Vue. Accessible headless components, used by many other Vue libraries.
+- Repo: https://github.com/unovue/reka-ui
+- Site: https://reka-ui.com
+
+### PrimeVue
+- Page: https://syllogeui.github.io/ui/primevue/
+- Type: UI framework, Ready-made components
+- Status: slowing (last push 2026-09-24)
+- Stars: 14,449
+- npm: primevue 5.0.5, 1,109,332 downloads/week
+- License: MIT
+- Frameworks: Vue
+- Best for (curator's opinion): Business apps with lots of data components
+- Curator note: From the Prime ecosystem (PrimeNG, PrimeReact). A very complete set of Vue components.
+- Repo: https://github.com/primefaces/primevue
+- Site: https://primevue.org
+
+### Element Plus
+- Page: https://syllogeui.github.io/ui/element-plus/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-19)
+- Stars: 27,860
+- npm: element-plus 2.14.8, 805,745 downloads/week
+- License: MIT
+- Frameworks: Vue
+- Best for (curator's opinion): Admin panels and dashboards in Vue 3
+- Curator note: The Vue 3 UI library from the Element team. One of the most downloaded in the Vue ecosystem.
+- Repo: https://github.com/element-plus/element-plus
+- Site: https://element-plus.org
+
+### Vant
+- Page: https://syllogeui.github.io/ui/vant/
+- Type: UI framework, Mobile and hybrid
+- Status: active (last push 2026-11-17)
+- Stars: 24,429
+- npm: vant 4.10.2, 115,882 downloads/week
+- License: MIT
+- Frameworks: Vue
+- Best for (curator's opinion): Mobile web apps in Vue
+- Curator note: Lightweight and customizable. From Youzan.
+- Repo: https://github.com/youzan/vant
+- Site: https://vant.pro/vant/
+
+### Skeleton
+- Page: https://syllogeui.github.io/ui/skeleton-svelte/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-17)
+- Stars: 6,093
+- npm: @skeletonlabs/skeleton 5.0.5, 111,031 downloads/week
+- License: MIT
+- Frameworks: Svelte
+- Styling: Tailwind
+- Best for (curator's opinion): Svelte with a Tailwind-based design system
+- Curator note: An adaptive design system powered by Tailwind CSS.
+- Repo: https://github.com/skeletonlabs/skeleton
+- Site: https://skeleton.dev
+
+### PrimeNG
+- Page: https://syllogeui.github.io/ui/primeng/
+- Type: UI framework, Ready-made components
+- Status: slowing (last push 2026-09-24)
+- Stars: 12,486
+- npm: primeng 22.1.5, 913,590 downloads/week
+- Frameworks: Angular
+- Best for (curator's opinion): Business apps with lots of data components in Angular
+- Curator note: A very complete set of Angular components from the Prime ecosystem. The license is listed as NOASSERTION on GitHub, so read LICENSE.md before using it commercially.
+- Repo: https://github.com/primefaces/primeng
+- Site: https://primeng.org
+
+### NG-ZORRO
+- Page: https://syllogeui.github.io/ui/ng-zorro-antd/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-18)
+- Stars: 9,195
+- npm: ng-zorro-antd 22.2.0, 189,104 downloads/week
+- License: MIT
+- Frameworks: Angular
+- Best for (curator's opinion): Admin and enterprise apps in Angular
+- Curator note: The Ant Design implementation for Angular.
+- Repo: https://github.com/ng-zorro/ng-zorro-antd
+- Site: https://ng.ant.design
+
+### Angular Material
+- Page: https://syllogeui.github.io/ui/angular-material/
+- Type: UI framework, Corporate design systems
+- Status: active (last push 2026-11-18)
+- Stars: 25,048
+- npm: @angular/material 22.3.0, 3,235,065 downloads/week
+- License: MIT
+- Frameworks: Angular
+- Best for (curator's opinion): Material Design in Angular
+- Curator note: From the Angular team. The same repo also holds the CDK for building your own components.
+- Repo: https://github.com/angular/components
+- Site: https://material.angular.dev
+
+### Bits UI
+- Page: https://syllogeui.github.io/ui/bits-ui/
+- Type: UI framework, Headless and primitives
+- Status: active (last push 2026-11-17)
+- Stars: 3,669
+- npm: bits-ui 2.21.0, 1,815,663 downloads/week
+- License: MIT
+- Frameworks: Svelte
+- Styling: Tanpa gaya
+- Best for (curator's opinion): The base for your own design system in Svelte
+- Curator note: Headless components for Svelte. Used by shadcn-svelte.
+- Repo: https://github.com/huntabyte/bits-ui
+- Site: https://bits-ui.com
+
+### shadcn-svelte
+- Page: https://syllogeui.github.io/ui/shadcn-svelte/
+- Type: UI framework, Tailwind and copy-paste
+- Status: active (last push 2026-11-16)
+- Stars: 9,269
+- npm: shadcn-svelte 1.8.1, 330,241 downloads/week
+- License: MIT
+- Frameworks: Svelte
+- Styling: Tailwind
+- Best for (curator's opinion): Svelte products with the shadcn look
+- Curator note: A port of shadcn/ui for Svelte. The code is copied into your project.
+- Repo: https://github.com/huntabyte/shadcn-svelte
+- Site: https://shadcn-svelte.com
+
+### Vuetify
+- Page: https://syllogeui.github.io/ui/vuetify/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-18)
+- Stars: 41,045
+- npm: vuetify 4.3.4, 1,347,277 downloads/week
+- Frameworks: Vue
+- Best for (curator's opinion): Material Design in Vue
+- Curator note: The most established Vue component framework. MIT licensed according to npm, though GitHub does not detect it.
+- Repo: https://github.com/vuetifyjs/vuetify
+- Site: https://vuetifyjs.com
+
+### Quasar
+- Page: https://syllogeui.github.io/ui/quasar/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-18)
+- Stars: 27,197
+- npm: quasar 2.35.5, 553,623 downloads/week
+- License: MIT
+- Frameworks: Vue
+- Best for (curator's opinion): One codebase for web, mobile, and desktop
+- Curator note: A Vue-based framework that covers both components and the build tooling.
+- Repo: https://github.com/quasarframework/quasar
+- Site: https://quasar.dev
+
+### Nuxt UI
+- Page: https://syllogeui.github.io/ui/nuxt-ui/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-18)
+- Stars: 7,093
+- npm: @nuxt/ui 4.13.0, 1,081,436 downloads/week
+- License: MIT
+- Frameworks: Vue
+- Styling: Tailwind
+- Best for (curator's opinion): Nuxt and Vue projects with Tailwind
+- Curator note: Ready-made components from the Nuxt team, built on Reka UI and Tailwind.
+- Repo: https://github.com/nuxt/ui
+- Site: https://ui.nuxt.com
+
+### Naive UI
+- Page: https://syllogeui.github.io/ui/naive-ui/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-14)
+- Stars: 18,611
+- npm: naive-ui 2.45.3, 205,304 downloads/week
+- License: MIT
+- Frameworks: Vue
+- Best for (curator's opinion): Vue 3 apps with TypeScript
+- Curator note: A Vue 3 component library written in TypeScript.
+- Repo: https://github.com/tusen-ai/naive-ui
+- Site: https://www.naiveui.com
+
+### Material Web
+- Page: https://syllogeui.github.io/ui/material-web/
+- Type: UI framework, Corporate design systems
+- Status: active (last push 2026-11-18)
+- Stars: 11,459
+- npm: @material/web 2.5.0, 200,654 downloads/week
+- License: Apache-2.0
+- Frameworks: Web Components
+- Best for (curator's opinion): Material Design 3 without a specific framework
+- Curator note: Material 3 components as web components, from Google.
+- Repo: https://github.com/material-components/material-web
+- Site: https://material-web.dev
+
+### Spectrum Web Components
+- Page: https://syllogeui.github.io/ui/spectrum-web-components/
+- Type: UI framework, Corporate design systems
+- Status: active (last push 2026-11-19)
+- Stars: 1,584
+- License: Apache-2.0
+- Frameworks: Web Components
+- Best for (curator's opinion): Adobe Spectrum-style products without a specific framework
+- Curator note: From Adobe. Split into one package per component, so npm download numbers are not shown.
+- Repo: https://github.com/adobe/spectrum-web-components
+- Site: https://opensource.adobe.com/spectrum-web-components/
+
+### Carbon Components Svelte
+- Page: https://syllogeui.github.io/ui/carbon-components-svelte/
+- Type: UI framework, Corporate design systems
+- Status: active (last push 2026-11-18)
+- Stars: 2,926
+- npm: carbon-components-svelte 0.114.3, 76,687 downloads/week
+- License: Apache-2.0
+- Frameworks: Svelte
+- Best for (curator's opinion): IBM Carbon-style enterprise apps in Svelte
+- Curator note: The Svelte implementation of the Carbon Design System.
+- Repo: https://github.com/carbon-design-system/carbon-components-svelte
+- Site: https://svelte.carbondesignsystem.com
+
+### Flowbite Svelte
+- Page: https://syllogeui.github.io/ui/flowbite-svelte/
+- Type: UI framework, Ready-made components
+- Status: slowing (last push 2026-06-27)
+- Stars: 2,793
+- npm: flowbite-svelte 1.33.1, 114,988 downloads/week
+- License: MIT
+- Frameworks: Svelte
+- Styling: Tailwind
+- Best for (curator's opinion): Svelte projects with Tailwind
+- Curator note: The Svelte version of Flowbite. Its official site rate-limits automated checks (HTTP 429), so we have not verified the demo link.
+- Repo: https://github.com/themesberg/flowbite-svelte
+- Site: https://flowbite-svelte.com
+
+### Flowbite
+- Page: https://syllogeui.github.io/ui/flowbite/
+- Type: UI framework, Tailwind and copy-paste
+- Status: slowing (last push 2026-06-27)
+- Stars: 9,388
+- npm: flowbite 4.0.2, 808,965 downloads/week
+- License: MIT
+- Frameworks: HTML
+- Styling: Tailwind
+- Best for (curator's opinion): Tailwind with plain HTML, no framework needed
+- Curator note: Components based on Tailwind CSS and HTML. There are also React and Svelte versions.
+- Repo: https://github.com/themesberg/flowbite
+- Site: https://flowbite.com
+
+### Calcite Design System
+- Page: https://syllogeui.github.io/ui/calcite-design-system/
+- Type: UI framework, Corporate design systems
+- Status: active (last push 2026-11-19)
+- Stars: 391
+- npm: @esri/calcite-components 5.2.1, 324,860 downloads/week
+- Frameworks: Web Components
+- Best for (curator's opinion): Map and geospatial apps (ArcGIS ecosystem)
+- Curator note: From Esri. Few stars but high npm downloads. The license is listed as NOASSERTION on GitHub, so read LICENSE.md before using it.
+- Repo: https://github.com/Esri/calcite-design-system
+- Site: https://developers.arcgis.com/calcite-design-system/
+
+### Cloudflare Kumo
+- Page: https://syllogeui.github.io/ui/cloudflare-kumo/
+- Type: UI framework, Corporate design systems
+- Status: active (last push 2026-11-18)
+- Stars: 4,246
+- npm: @cloudflare/kumo 2.19.0, 791,148 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: Tailwind
+- Best for (curator's opinion): Web apps in the Cloudflare dashboard style
+- Curator note: Cloudflare's component library, built on Base UI. Still new and moving fast.
+- Repo: https://github.com/cloudflare/kumo
+- Site: https://kumo-ui.com
+
+### Taiga UI
+- Page: https://syllogeui.github.io/ui/taiga-ui/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-19)
+- Stars: 4,097
+- npm: @taiga-ui/core 5.33.0, 41,015 downloads/week
+- License: Apache-2.0
+- Frameworks: Angular
+- Best for (curator's opinion): Angular apps with a complete set of components
+- Curator note: Split into several packages (core, kit, and more). Requires Angular 19 or newer.
+- Repo: https://github.com/taiga-family/taiga-ui
+- Site: https://taiga-ui.dev
+
+### Varlet
+- Page: https://syllogeui.github.io/ui/varlet/
+- Type: UI framework, Mobile and hybrid
+- Status: active (last push 2026-11-13)
+- Stars: 5,347
+- npm: @varlet/ui 3.20.11, 2,574 downloads/week
+- License: MIT
+- Frameworks: Vue
+- Best for (curator's opinion): Mobile and desktop apps in Vue 3
+- Curator note: Based on Material Design 2 and 3. Small npm downloads, but plenty of stars.
+- Repo: https://github.com/varletjs/varlet
+- Site: https://varletjs.org
+
+### Arco Design Vue
+- Page: https://syllogeui.github.io/ui/arco-design-vue/
+- Type: UI framework, Corporate design systems
+- Status: active (last push 2026-11-17)
+- Stars: 3,123
+- npm: @arco-design/web-vue 2.59.0, 23,324 downloads/week
+- License: MIT
+- Frameworks: Vue
+- Best for (curator's opinion): Enterprise apps in Vue 3
+- Curator note: The Vue version of ByteDance's Arco Design. The counterpart of the React Arco Design already in the catalog.
+- Repo: https://github.com/arco-design/arco-design-vue
+- Site: https://arco.design/vue
+
+### React Native UI Lib
+- Page: https://syllogeui.github.io/ui/react-native-ui-lib/
+- Type: UI framework, Mobile and hybrid
+- Status: active (last push 2026-11-15)
+- Stars: 7,158
+- npm: react-native-ui-lib 10.0.0, 25,189 downloads/week
+- License: MIT
+- Frameworks: React Native
+- Best for (curator's opinion): React Native apps with ready-made components
+- Curator note: From Wix. Components for React Native, not for the web.
+- Repo: https://github.com/wix/react-native-ui-lib
+- Site: https://wix.github.io/react-native-ui-lib/
+
+### Primer CSS
+- Page: https://syllogeui.github.io/ui/primer-css/
+- Type: UI framework, Corporate design systems
+- Status: active (last push 2026-11-18)
+- Stars: 13,060
+- npm: @primer/css 22.3.3, 65,860 downloads/week
+- License: MIT
+- Frameworks: HTML
+- Best for (curator's opinion): The GitHub look with plain HTML and CSS
+- Curator note: The CSS implementation of GitHub's design system. For the React version, see Primer React.
+- Repo: https://github.com/primer/css
+- Site: https://primer.style/css
+
+### Amplify UI
+- Page: https://syllogeui.github.io/ui/amplify-ui/
+- Type: UI framework, Corporate design systems
+- Status: active (last push 2026-11-17)
+- Stars: 1,145
+- npm: @aws-amplify/ui-react 6.15.7, 546,693 downloads/week
+- License: Apache-2.0
+- Frameworks: React, Vue, Angular, React Native
+- Best for (curator's opinion): Apps built on AWS Amplify (sign-in, storage, and more)
+- Curator note: From AWS. There are packages for React, Vue, Angular, and React Native. The components can connect directly to AWS cloud services.
+- Repo: https://github.com/aws-amplify/amplify-ui
+- Site: https://ui.docs.amplify.aws
+
+### MUI X
+- Page: https://syllogeui.github.io/ui/mui-x/
+- Type: UI framework, Dashboards and data
+- Status: active (last push 2026-11-19)
+- Stars: 5,882
+- npm: @mui/x-data-grid 9.18.0, 4,429,346 downloads/week
+- Frameworks: React
+- Styling: CSS-in-JS
+- Best for (curator's opinion): Data-heavy apps: tables, dates, and charts
+- Curator note: An add-on for Material UI (Data Grid, Date Pickers, Charts). The Pro and Premium versions have a commercial license. The license is not detected on GitHub.
+- Repo: https://github.com/mui/mui-x
+- Site: https://mui.com/x/
+
+### Radix Themes
+- Page: https://syllogeui.github.io/ui/radix-themes/
+- Type: UI framework, Ready-made components
+- Status: inactive (last push 2026-04-11)
+- Stars: 8,859
+- npm: @radix-ui/themes 3.3.0, 1,566,315 downloads/week
+- License: MIT
+- Frameworks: React
+- Styling: CSS modules
+- Best for (curator's opinion): Pre-styled components built on Radix
+- Curator note: Built on Radix Primitives. Updates have slowed down, but npm downloads are still high.
+- Repo: https://github.com/radix-ui/themes
+- Site: https://radix-ui.com/themes
+
+### ElevenLabs UI
+- Page: https://syllogeui.github.io/ui/elevenlabs-ui/
+- Type: UI framework, UI for AI and agents
+- Status: active (last push 2026-11-16)
+- Stars: 2,460
+- License: MIT
+- Frameworks: React
+- Styling: Tailwind
+- Best for (curator's opinion): Voice and multimodal agent interfaces
+- Curator note: A component registry on top of shadcn/ui, copied into your project. It has no npm package of its own, so downloads are not shown.
+- Warning: The official site blocked automated checks (HTTP 429) on Nov 18, 2026. It usually opens in a regular browser, but we have not verified that.
+- Repo: https://github.com/elevenlabs/ui
+- Site: https://ui.elevenlabs.io
+
+### Basecoat
+- Page: https://syllogeui.github.io/ui/basecoat-ui/
+- Type: UI framework, Tailwind and copy-paste
+- Status: active (last push 2026-10-23)
+- Stars: 4,455
+- npm: basecoat-css 1.1.0, 43,495 downloads/week
+- License: MIT
+- Frameworks: HTML
+- Styling: Tailwind
+- Best for (curator's opinion): Projects without a JavaScript framework, just HTML and Tailwind
+- Curator note: Components built with Tailwind CSS that work with any web stack.
+- Repo: https://github.com/hunvreus/basecoat
+- Site: https://basecoatui.com
+
+### Oruga
+- Page: https://syllogeui.github.io/ui/oruga/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-18)
+- Stars: 1,163
+- npm: @oruga-ui/oruga-next 0.14.6, 9,332 downloads/week
+- License: MIT
+- Frameworks: Vue
+- Best for (curator's opinion): Vue with the CSS framework of your choice
+- Curator note: Lightweight Vue components with no CSS dependency, so the look comes from the CSS framework you pick.
+- Repo: https://github.com/oruga-ui/oruga
+- Site: https://oruga-ui.com
+
+### Zard UI
+- Page: https://syllogeui.github.io/ui/zard-ui/
+- Type: UI framework, Tailwind and copy-paste
+- Status: active (last push 2026-11-19)
+- Stars: 1,213
+- License: MIT
+- Frameworks: Angular
+- Styling: Tailwind
+- Best for (curator's opinion): Angular with the shadcn/ui look
+- Curator note: Based on shadcn/ui and NG-ZORRO. It has no npm package of its own, so downloads are not shown.
+- Repo: https://github.com/zard-ui/zardui
+- Site: https://www.zardui.com
+
+### Kokonut UI
+- Page: https://syllogeui.github.io/ui/kokonut-ui/
+- Type: UI framework, Tailwind and copy-paste
+- Status: active (last push 2026-11-16)
+- Stars: 2,384
+- License: MIT
+- Frameworks: React
+- Styling: Tailwind
+- Best for (curator's opinion): Copy-ready animated components on top of shadcn/ui
+- Curator note: A collection of components built with Tailwind CSS, shadcn/ui, and Motion. There is no npm package, so downloads are not shown.
+- Repo: https://github.com/kokonut-labs/kokonutui
+- Site: https://kokonutui.com
+
+### UI Kitten
+- Page: https://syllogeui.github.io/ui/react-native-ui-kitten/
+- Type: UI framework, Mobile and hybrid
+- Status: active (last push 2026-10-06)
+- Stars: 10,667
+- npm: @ui-kitten/components 6.2.1, 12,503 downloads/week
+- License: MIT
+- Frameworks: React Native
+- Best for (curator's opinion): React Native apps with the Eva Design System
+- Curator note: Built on the Eva Design System, with 30+ themeable components for iOS, Android, and web.
+- Repo: https://github.com/akveo/react-native-ui-kitten
+- Site: https://akveo.github.io/react-native-ui-kitten/
+
+### Fusion Design
+- Page: https://syllogeui.github.io/ui/alibaba-fusion/
+- Type: UI framework, Corporate design systems
+- Status: active (last push 2026-11-13)
+- Stars: 4,681
+- npm: @alifd/next 1.27.34, 20,550 downloads/week
+- License: MIT
+- Frameworks: React
+- Best for (curator's opinion): Enterprise apps in the Alibaba style
+- Curator note: A configurable React component library from Alibaba.
+- Repo: https://github.com/alibaba-fusion/next
+- Site: https://fusion.design
+
+### React Bits
+- Page: https://syllogeui.github.io/ui/react-bits/
+- Type: UI framework, Experimental and niche
+- Status: active (last push 2026-11-16)
+- Stars: 52,281
+- Frameworks: React
+- Best for (curator's opinion): Interactive effects and animation for pages
+- Curator note: One of the repos with the most stars in this catalog, but we found no official npm package for it.
+- Warning: The license is MIT with the Commons Clause, which restricts selling the components as a product. Read LICENSE before commercial use. The npm package named react-bits is a different project.
+- Repo: https://github.com/DavidHDev/react-bits
+- Site: https://reactbits.dev
+
+### Motion Primitives
+- Page: https://syllogeui.github.io/ui/motion-primitives/
+- Type: UI framework, Experimental and niche
+- Status: slowing (last push 2026-09-28)
+- Stars: 6,986
+- npm: motion-primitives 0.1.0, 1,801 downloads/week
+- License: MIT
+- Frameworks: React
+- Best for (curator's opinion): Interfaces with smooth animation
+- Curator note: A customizable animated UI kit. Its npm package is still on version 0.1.0.
+- Repo: https://github.com/ibelick/motion-primitives
+- Site: https://motion-primitives.com
+
+### AI Elements Vue
+- Page: https://syllogeui.github.io/ui/ai-elements-vue/
+- Type: UI framework, UI for AI and agents
+- Status: active (last push 2026-10-11)
+- Stars: 1,202
+- npm: ai-elements-vue 1.5.2, 338 downloads/week
+- Frameworks: Vue
+- Best for (curator's opinion): AI app interfaces in Vue
+- Curator note: The Vue counterpart of AI Elements, built on shadcn-vue. The license file in the repo is Apache-2.0, but the npm metadata says MIT.
+- Repo: https://github.com/vuepont/ai-elements-vue
+- Site: https://www.ai-elements-vue.com
+
+### Inkline
+- Page: https://syllogeui.github.io/ui/inkline/
+- Type: UI framework, Ready-made components
+- Status: active (last push 2026-11-19)
+- Stars: 1,467
+- npm: @inkline/inkline 4.7.2, 3,214 downloads/week
+- Frameworks: Vue
+- Best for (curator's opinion): Vue 3 and Nuxt apps with a complete component foundation
+- Curator note: A component library for Vue 3 with a focus on developer experience.
+- Warning: The repo has no license file. Only the npm metadata says MIT, so usage rights are not clear. Check with the maintainers before commercial use.
+- Repo: https://github.com/uxfront-com/inkline
+- Site: https://inkline.io
+
+### Ant Design Web3
+- Page: https://syllogeui.github.io/ui/ant-design-web3/
+- Type: UI framework, Experimental and niche
+- Status: slowing (last push 2026-07-22)
+- Stars: 1,149
+- npm: @ant-design/web3 1.26.1, 618 downloads/week
+- License: MIT
+- Frameworks: React
+- Best for (curator's opinion): dApps: connecting crypto wallets
+- Curator note: Components for connecting crypto wallets and building dApps. Requires Ant Design (antd) 5 or newer.
+- Repo: https://github.com/ant-design/ant-design-web3
+- Site: https://web3.ant.design
+
+### Onsen UI
+- Page: https://syllogeui.github.io/ui/onsen-ui/
+- Type: UI framework, Mobile and hybrid
+- Status: slowing (last push 2026-06-17)
+- Stars: 8,852
+- npm: onsenui 2.12.9, 7,967 downloads/week
+- Frameworks: HTML, React, Vue, Angular
+- Best for (curator's opinion): Hybrid mobile apps with HTML5
+- Curator note: A framework and SDK for cross-platform mobile apps, with separate packages for React, Vue, and Angular. GitHub lists no license, while npm says Apache-2.0.
+- Repo: https://github.com/OnsenUI/OnsenUI
+- Site: https://onsen.io/
+
+### Animal Island UI
+- Page: https://syllogeui.github.io/ui/animal-island-ui/
+- Type: UI framework, Experimental and niche
+- Status: active (last push 2026-11-17)
+- Stars: 5,172
+- npm: animal-island-ui 4.0.1, 2,149 downloads/week
+- License: MIT
+- Frameworks: React
+- Best for (curator's opinion): Products with a cute (kawaii) look
+- Curator note: A React component library in a kawaii style.
+- Repo: https://github.com/guokaigdg/animal-island-ui
+- Site: https://guokaigdg.github.io/animal-island-ui/
+
+### React95
+- Page: https://syllogeui.github.io/ui/react95/
+- Type: UI framework, Experimental and niche
+- Status: active (last push 2026-11-16)
+- Stars: 3,846
+- npm: react95 4.0.0, 1,346 downloads/week
+- Frameworks: React
+- Best for (curator's opinion): Interfaces in the Windows 95 style
+- Curator note: Windows images and trademarks belong to Microsoft and are not covered by this project's MIT license.
+- Repo: https://github.com/React95/React95
+- Site: https://react95.github.io/React95/
+
+## Icon set (20)
+
+### Lucide
+- Page: https://syllogeui.github.io/icons/lucide/
+- Type: Icon set, General-purpose sets
+- Status: active (last push 2026-11-19)
+- Stars: 25,857
+- npm: lucide-react 1.76.0, 140,185,445 downloads/week
+- License: ISC
+- Formats: SVG, React, Vue, Svelte, Font
+- Icon styles: Outline
+- Icons: 2,055
+- Best for (curator's opinion): Clean lines, the default in shadcn/ui
+- Curator note: A well-maintained fork of Feather. A safe choice for new products
+- Repo: https://github.com/lucide-icons/lucide
+- Site: https://lucide.dev
+
+### Phosphor Icons
+- Page: https://syllogeui.github.io/icons/phosphor/
+- Type: Icon set, General-purpose sets
+- Status: slowing (last push 2026-01-06)
+- Stars: 403
+- npm: @phosphor-icons/react 2.1.10, 7,964,119 downloads/week
+- License: MIT
+- Formats: SVG, React, Vue, Font
+- Icon styles: Outline, Solid, Duotone
+- Icons: 9,072
+- Best for (curator's opinion): You need one set with several weights
+- Curator note: Weights from thin to bold plus duotone, all in one family
+- Repo: https://github.com/phosphor-icons/core
+- Site: https://phosphoricons.com/
+
+### Tabler Icons
+- Page: https://syllogeui.github.io/icons/tabler-icons/
+- Type: Icon set, General-purpose sets
+- Status: active (last push 2026-11-16)
+- Stars: 22,714
+- npm: @tabler/icons-react 3.52.0, 5,446,860 downloads/week
+- License: MIT
+- Formats: SVG, React, Vue, Font
+- Icon styles: Outline, Solid
+- Icons: 6,545
+- Best for (curator's opinion): A large set for dashboards
+- Curator note: Thousands of icons with consistent strokes, updated daily
+- Repo: https://github.com/tabler/tabler-icons
+- Site: https://tabler.io/icons
+
+### Heroicons
+- Page: https://syllogeui.github.io/icons/heroicons/
+- Type: Icon set, General-purpose sets
+- Status: slowing (last push 2026-05-12)
+- Stars: 23,915
+- npm: @heroicons/react 2.2.0, 6,614,731 downloads/week
+- License: MIT
+- Formats: SVG, React, Vue
+- Icon styles: Outline, Solid
+- Icons: 1,288
+- Best for (curator's opinion): Tailwind projects
+- Curator note: Made by the Tailwind team. A small set, but a tidy one
+- Repo: https://github.com/tailwindlabs/heroicons
+- Site: https://heroicons.com
+
+### Radix Icons
+- Page: https://syllogeui.github.io/icons/radix-icons/
+- Type: Icon set, General-purpose sets
+- Status: slowing (last push 2026-04-02)
+- Stars: 2,708
+- npm: @radix-ui/react-icons 1.3.2, 7,847,520 downloads/week
+- License: MIT
+- Formats: SVG, React
+- Icon styles: Outline
+- Icons: 332
+- Best for (curator's opinion): Pairs with Radix and shadcn
+- Curator note: Only 15x15px, which works well for dense interfaces
+- Repo: https://github.com/radix-ui/icons
+- Site: https://radix-ui.com/icons
+
+### Iconoir
+- Page: https://syllogeui.github.io/icons/iconoir/
+- Type: Icon set, General-purpose sets
+- Status: active (last push 2026-11-04)
+- Stars: 4,648
+- npm: iconoir-react 7.12.2, 245,322 downloads/week
+- License: MIT
+- Formats: SVG, React, Flutter
+- Icon styles: Outline
+- Icons: 1,671
+- Best for (curator's opinion): A delicate line style
+- Curator note: Free, with no paid version
+- Repo: https://github.com/iconoir-icons/iconoir
+- Site: https://iconoir.com
+
+### Feather
+- Page: https://syllogeui.github.io/icons/feather/
+- Type: Icon set, General-purpose sets
+- Status: inactive (last push 2025-03-11)
+- Stars: 26,043
+- npm: feather-icons 4.29.2, 317,551 downloads/week
+- License: MIT
+- Formats: SVG, JS
+- Icon styles: Outline
+- Icons: 286
+- Best for (curator's opinion): Older projects that already use it
+- Curator note: Maintenance has slowed down. For new projects, use Lucide
+- Warning: Maintenance has slowed down (last update March 2025). For new projects, Lucide is the successor.
+- Repo: https://github.com/feathericons/feather
+- Site: https://feathericons.com
+
+### Boxicons
+- Page: https://syllogeui.github.io/icons/boxicons/
+- Type: Icon set, General-purpose sets
+- Status: slowing (last push 2026-02-16)
+- Stars: 3,178
+- npm: boxicons 2.1.4, 64,055 downloads/week
+- License: MIT
+- Formats: SVG, Font
+- Icon styles: Outline, Solid
+- Icons: 814
+- Best for (curator's opinion): You need logos and general icons in one set
+- Curator note: Version 2.x is inactive, and the new version is partly paid
+- Warning: The 2.x npm package is no longer updated, and the latest version is partly paid.
+- Repo: https://github.com/atisawd/boxicons
+- Site: https://boxicons.com
+
+### Font Awesome Free
+- Page: https://syllogeui.github.io/icons/font-awesome-free/
+- Type: Icon set, Large sets
+- Status: slowing (last push 2026-07-15)
+- Stars: 77,044
+- npm: @fortawesome/fontawesome-free 7.3.1, 3,373,255 downloads/week
+- License: CC BY 4.0 + OFL + MIT
+- Formats: Font, SVG, React
+- Icon styles: Solid
+- Icons: 1,402
+- Best for (curator's opinion): Long-established ecosystem with plenty of tutorials
+- Curator note: The free version is limited. Attribution is required (CC BY 4.0 for the icons)
+- Warning: Attribution is required for the free icons (CC BY 4.0). The free version is much smaller than the paid one.
+- Repo: https://github.com/FortAwesome/Font-Awesome
+- Site: https://fontawesome.com
+
+### Bootstrap Icons
+- Page: https://syllogeui.github.io/icons/bootstrap-icons/
+- Type: Icon set, Large sets
+- Status: active (last push 2026-11-14)
+- Stars: 8,185
+- npm: bootstrap-icons 1.13.2, 1,088,422 downloads/week
+- License: MIT
+- Formats: SVG, Font
+- Icon styles: Outline, Solid
+- Icons: 2,078
+- Best for (curator's opinion): Bootstrap projects and plain HTML
+- Curator note: Works without any framework
+- Repo: https://github.com/twbs/icons
+- Site: https://icons.getbootstrap.com
+
+### Remix Icon
+- Page: https://syllogeui.github.io/icons/remix-icon/
+- Type: Icon set, Large sets
+- Status: slowing (last push 2026-04-28)
+- Stars: 8,460
+- npm: remixicon 4.9.1, 256,237 downloads/week
+- License: Apache-2.0
+- Formats: SVG, Font, React
+- Icon styles: Outline, Solid
+- Icons: 3,188
+- Best for (curator's opinion): A neutral set of 3,000+ icons
+- Curator note: Remix Icon license (Apache-2.0 on npm)
+- Repo: https://github.com/Remix-Design/RemixIcon
+- Site: https://remixicon.com
+
+### Ionicons
+- Page: https://syllogeui.github.io/icons/ionicons/
+- Type: Icon set, Large sets
+- Status: active (last push 2026-07-28)
+- Stars: 18,257
+- npm: ionicons 8.1.0, 899,056 downloads/week
+- License: MIT
+- Formats: SVG, Web Component
+- Icon styles: Outline, Solid
+- Icons: 1,357
+- Best for (curator's opinion): Ionic and mobile apps
+- Curator note: Three styles per icon
+- Repo: https://github.com/ionic-team/ionicons
+- Site: http://ionicons.com
+
+### Material Symbols
+- Page: https://syllogeui.github.io/icons/material-symbols/
+- Type: Icon set, Design-system sets
+- Status: active (last push 2026-10-23)
+- Stars: 54,330
+- npm: material-symbols 0.49.0, 704,382 downloads/week
+- License: Apache-2.0
+- Formats: Font, SVG
+- Icon styles: Outline, Solid
+- Icons: 15,810
+- Best for (curator's opinion): Material Design and Android
+- Curator note: Variable: weight, fill, grade, optical size
+- Repo: https://github.com/google/material-design-icons
+- Site: http://google.github.io/material-design-icons/
+
+### Fluent System Icons
+- Page: https://syllogeui.github.io/icons/fluent-icons/
+- Type: Icon set, Design-system sets
+- Status: active (last push 2026-11-18)
+- Stars: 10,994
+- npm: @fluentui/react-icons 2.0.347, 871,155 downloads/week
+- License: MIT
+- Formats: SVG, React, Font
+- Icon styles: Outline, Solid
+- Icons: 20,015
+- Best for (curator's opinion): Microsoft-style products
+- Curator note: Two styles, many sizes
+- Repo: https://github.com/microsoft/fluentui-system-icons
+- Site: https://aka.ms/fluentui-system-icons
+
+### Carbon Icons
+- Page: https://syllogeui.github.io/icons/carbon-icons/
+- Type: Icon set, Design-system sets
+- Status: active (last push 2026-11-18)
+- Stars: 9,630
+- npm: @carbon/icons-react 11.92.0, 442,711 downloads/week
+- License: Apache-2.0
+- Formats: SVG, React
+- Icon styles: Outline
+- Icons: 2,644
+- Best for (curator's opinion): Enterprise and data products
+- Curator note: IBM Carbon icons, with a bold style
+- Repo: https://github.com/carbon-design-system/carbon
+- Site: https://www.carbondesignsystem.com
+
+### Octicons (GitHub)
+- Page: https://syllogeui.github.io/icons/octicons/
+- Type: Icon set, Design-system sets
+- Status: active (last push 2026-11-16)
+- Stars: 8,785
+- npm: @primer/octicons-react 19.42.0, 216,733 downloads/week
+- License: MIT
+- Formats: SVG, React
+- Icon styles: Outline
+- Icons: 780
+- Best for (curator's opinion): Developer tools
+- Curator note: The icons used in GitHub's interface
+- Repo: https://github.com/primer/octicons
+- Site: https://primer.style/octicons/
+
+### Simple Icons
+- Page: https://syllogeui.github.io/icons/simple-icons/
+- Type: Icon set, Brand logos
+- Status: active (last push 2026-11-16)
+- Stars: 26,236
+- npm: simple-icons 16.38.0, 2,678,056 downloads/week
+- License: CC0-1.0
+- Formats: SVG, Font
+- Icon styles: Logo
+- Icons: 3,470
+- Best for (curator's opinion): Technology and brand logos
+- Curator note: Logos only, CC0. Follow each brand's guidelines when using a logo
+- Warning: Brand logos only. Use them according to each brand's own guidelines.
+- Repo: https://github.com/simple-icons/simple-icons
+- Site: https://simpleicons.org
+
+### Iconify
+- Page: https://syllogeui.github.io/icons/iconify/
+- Type: Icon set, Aggregators
+- Status: active (last push 2026-11-18)
+- Stars: 6,411
+- npm: @iconify/react 6.0.4, 1,657,992 downloads/week
+- License: MIT
+- Formats: SVG, React, Vue, Svelte
+- Icon styles: Outline, Solid
+- Icons: 7,447
+- Best for (curator's opinion): You need many sets through one API
+- Curator note: One API for hundreds of sets. The preview uses the MDI set as an example
+- Repo: https://github.com/iconify/iconify
+- Site: https://iconify.design/
+
+### Hugeicons
+- Page: https://syllogeui.github.io/icons/hugeicons/
+- Type: Icon set, Large sets
+- Status: active (last push 2026-11-16)
+- Stars: 1,236
+- npm: @hugeicons/react 1.1.10, 2,068,717 downloads/week
+- License: MIT
+- Formats: SVG, React, Flutter
+- Icon styles: Outline
+- Icons: 6,114
+- Best for (curator's opinion): You want a large set in one rounded line style
+- Curator note: What appears here is the free version: 6,000+ icons in Stroke Rounded. The paid Pro version has 60,000+ icons in 10 styles.
+- Repo: https://github.com/hugeicons/hugeicons
+- Site: https://hugeicons.com
+
+### Devicon
+- Page: https://syllogeui.github.io/icons/devicon/
+- Type: Icon set, Brand logos
+- Status: active (last push 2026-11-18)
+- Stars: 11,877
+- npm: devicon 2.18.0, 85,609 downloads/week
+- License: MIT
+- Formats: SVG, Font
+- Icon styles: Logo
+- Icons: 1,155
+- Best for (curator's opinion): Logos of programming languages and developer tools
+- Curator note: Most logos keep their original colors rather than a single color. The logos belong to their respective owners.
+- Warning: Technology logos only. Use them according to each brand's guidelines.
+- Repo: https://github.com/devicons/devicon
+- Site: https://devicon.dev
+
+## Archive (8)
+
+### Polaris React (Shopify)
+- Page: https://syllogeui.github.io/archive/polaris-react-shopify/
+- Type: Archive, Archive
+- Status: archived (last push 2026-09-11)
+- Stars: 6,146
+- Frameworks: React
+- Curator note: The repo is archived (`polaris-react-archive`, Sep 2026). Shopify moved to web components
+- Repo: https://github.com/Shopify/polaris-react-archive
+- Site: https://shopify.github.io/polaris-react-archive/
+
+### Semantic-UI-React
+- Page: https://syllogeui.github.io/archive/semantic-ui-react/
+- Type: Archive, Archive
+- Status: inactive (last push 2024-11-22)
+- Stars: 13,196
+- npm: semantic-ui-react 2.1.5, 328,761 downloads/week
+- License: MIT
+- Frameworks: React
+- Curator note: Last push was in Nov 2024, so it's no longer maintained
+- Repo: https://github.com/Semantic-Org/Semantic-UI-React
+- Site: https://react.semantic-ui.com
+
+### Rebass
+- Page: https://syllogeui.github.io/archive/rebass/
+- Type: Archive, Archive
+- Status: inactive (last push 2023-07-27)
+- Stars: 7,898
+- npm: rebass 4.0.7, 31,260 downloads/week
+- License: MIT
+- Frameworks: React
+- Curator note: Last updated in Jul 2023
+- Repo: https://github.com/rebassjs/rebass
+
+### react-desktop
+- Page: https://syllogeui.github.io/archive/react-desktop/
+- Type: Archive, Archive
+- Status: inactive (last push 2023-07-01)
+- Stars: 9,470
+- npm: react-desktop 0.3.9, 1,098 downloads/week
+- License: MIT
+- Frameworks: React
+- Curator note: Last updated in Jul 2023
+- Repo: https://github.com/gabrielbull/react-desktop
+- Site: http://reactdesktop.js.org
+
+### cf-ui (Cloudflare)
+- Page: https://syllogeui.github.io/archive/cf-ui-cloudflare/
+- Type: Archive, Archive
+- Status: archived (last push 2019-04-14)
+- Stars: 1,290
+- Frameworks: React
+- Curator note: Archived since 2019
+- Repo: https://github.com/cloudflare/cf-ui
+
+### Pluralsight Design System (classic)
+- Page: https://syllogeui.github.io/archive/pluralsight-design-system-classic/
+- Type: Archive, Archive
+- Status: archived (last push 2024-06-03)
+- Stars: 295
+- License: Apache-2.0
+- Frameworks: React
+- Curator note: Archived (Jun 2024)
+- Repo: https://github.com/pluralsight/classic-design-system
+- Site: https://design-system.pluralsight.com
+
+### Hack Club Design System
+- Page: https://syllogeui.github.io/archive/hack-club-design-system/
+- Type: Archive, Archive
+- Status: archived (last push 2023-09-27)
+- Stars: 159
+- License: MIT
+- Frameworks: React
+- Curator note: Archived (Sep 2023)
+- Repo: https://github.com/hackclub/design-system
+- Site: https://hackclub.github.io/design-system
+
+### Toolpad (MUI)
+- Page: https://syllogeui.github.io/archive/toolpad-mui/
+- Type: Archive, Archive
+- Status: archived (last push 2026-09-23)
+- Stars: 1,703
+- License: MIT
+- Frameworks: React
+- Curator note: Archived
+- Repo: https://github.com/mui/toolpad
+- Site: https://mui.com/toolpad/

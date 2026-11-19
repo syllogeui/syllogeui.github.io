@@ -1,0 +1,183 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Sylloge entries.json",
+ "description": "Read https://syllogeui.github.io/for-ai.md (a guide written for AI agents) for field meanings and limits.",
+ "type": "object",
+ "required": [
+  "date",
+  "curator",
+  "entries"
+ ],
+ "properties": {
+  "date": {
+   "type": "string",
+   "format": "date"
+  },
+  "curator": {
+   "type": "string"
+  },
+  "entries": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "required": [
+     "id",
+     "name",
+     "kind",
+     "status",
+     "statusCode",
+     "push",
+     "n",
+     "path"
+    ],
+    "properties": {
+     "id": {
+      "type": "string",
+      "description": "Stable id"
+     },
+     "name": {
+      "type": "string",
+      "description": "Display name"
+     },
+     "kind": {
+      "type": "string",
+      "description": "fw, icon or arsip"
+     },
+     "sub": {
+      "type": "string",
+      "description": "Subcategory (Indonesian)"
+     },
+     "status": {
+      "type": "string",
+      "description": "Indonesian status label"
+     },
+     "statusCode": {
+      "type": "string",
+      "description": "active, slowing, inactive or archived"
+     },
+     "push": {
+      "type": "string",
+      "description": "Date of last push, YYYY-MM-DD"
+     },
+     "n": {
+      "type": "integer",
+      "description": "Exact GitHub stars"
+     },
+     "stars": {
+      "type": "string",
+      "description": "Stars rounded for display"
+     },
+     "pkg": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "npm package"
+     },
+     "v": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "Latest npm version"
+     },
+     "dl": {
+      "type": [
+       "integer",
+       "null"
+      ],
+      "description": "npm downloads in the last week"
+     },
+     "lic": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "SPDX license from GitHub"
+     },
+     "fw": {
+      "type": "array",
+      "description": "Web frameworks supported"
+     },
+     "sty": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "Styling approach"
+     },
+     "fmt": {
+      "type": "array",
+      "description": "Icon formats"
+     },
+     "istyle": {
+      "type": "array",
+      "description": "Icon styles"
+     },
+     "count": {
+      "type": [
+       "integer",
+       "null"
+      ],
+      "description": "Number of icons"
+     },
+     "fit": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "Curator: best for (Indonesian)"
+     },
+     "fit_en": {
+      "type": "string",
+      "description": "Curator: best for (English)"
+     },
+     "note": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "Curator note (Indonesian)"
+     },
+     "note_en": {
+      "type": "string",
+      "description": "Curator note (English)"
+     },
+     "warn": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "Warning (Indonesian)"
+     },
+     "warn_en": {
+      "type": "string",
+      "description": "Warning (English)"
+     },
+     "gh": {
+      "type": "string",
+      "description": "Repository URL"
+     },
+     "home": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "Official site"
+     },
+     "demo": {
+      "type": [
+       "string",
+       "null"
+      ],
+      "description": "Demo link"
+     },
+     "path": {
+      "type": "string",
+      "description": "Page path on this site"
+     }
+    }
+   }
+  }
+ }
+}
